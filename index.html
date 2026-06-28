@@ -3,218 +3,351 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rutuja Mahajan - Data Analyst</title>
-<meta name="description" content="Rutuja Mahajan - Data Analyst. I turn manual chaos into clean, queryable systems. Python · SQL · ETL · Cloud · BI.">
+<title>Rutuja Mahajan | Data, AI &amp; ML Portfolio | Dublin</title>
+<meta name="description" content="Portfolio of Rutuja Mahajan, a Dublin-based Data, AI and ML professional building Python pipelines, SQL analytics, cloud dashboards, machine learning models, and LLM/RAG decision-support systems.">
+<meta name="author" content="Rutuja Yogesh Mahajan">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rutuja Mahajan | Data, AI &amp; ML Portfolio | Dublin">
+<meta property="og:description" content="Dublin-based Data, AI &amp; ML professional. Python pipelines, SQL analytics, cloud dashboards, ML models, and LLM/RAG decision-support systems.">
+<meta property="og:url" content="https://rutujamahajan253.github.io/portfolio-253/">
+<meta property="og:locale" content="en_IE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rutuja Mahajan | Data, AI &amp; ML Portfolio | Dublin">
+<meta name="twitter:description" content="Dublin-based Data, AI &amp; ML professional building data systems, ML models, and LLM/RAG prototypes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0B1120;
-  --bg-2:#0F1729;
-  --panel:#131C30;
-  --line:#1E2A44;
-  --ink:#E7ECF4;
+  --bg:#080C16;
+  --bg-2:#0C1322;
+  --panel:#111A2C;
+  --panel-2:#0F1626;
+  --glass:rgba(17,26,44,.6);
+  --line:#1D2A45;
+  --line-2:#27375a;
+  --ink:#E9EEF7;
   --muted:#8294B4;
-  --dim:#536184;
+  --dim:#52617f;
   --amber:#F5B14C;
   --mint:#5EEAD4;
   --rose:#F2779A;
+  --violet:#A78BFA;
   --r:14px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  background:var(--bg);
-  color:var(--ink);
-  font-family:'Inter',system-ui,sans-serif;
-  line-height:1.6;
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
+  background:var(--bg);color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;line-height:1.6;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
 }
-::selection{background:var(--amber);color:#0B1120}
+::selection{background:var(--amber);color:#080C16}
 a{color:inherit;text-decoration:none}
 .mono{font-family:'JetBrains Mono',monospace}
-.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--mint);outline-offset:3px;border-radius:6px}
 
-/* ---------- ambient grid + flowing particles ---------- */
-.field{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55}
+/* ambient */
+.field{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5}
 .field canvas{width:100%;height:100%;display:block}
 .vignette{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:radial-gradient(120% 80% at 50% -10%, rgba(245,177,76,.06), transparent 60%),
-             radial-gradient(100% 60% at 100% 110%, rgba(94,234,212,.05), transparent 60%);}
+             radial-gradient(100% 60% at 100% 110%, rgba(94,234,212,.05), transparent 60%),
+             radial-gradient(80% 50% at 0% 40%, rgba(167,139,250,.04), transparent 60%);}
+.grid-bg{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.35;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:54px 54px;
+  mask-image:radial-gradient(circle at 50% 0%, #000 0%, transparent 75%);
+  -webkit-mask-image:radial-gradient(circle at 50% 0%, #000 0%, transparent 75%);}
 
-/* ---------- nav ---------- */
-nav{position:fixed;top:0;left:0;right:0;z-index:40;
-  backdrop-filter:blur(12px);
-  background:linear-gradient(180deg, rgba(11,17,32,.85), rgba(11,17,32,.35));
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;
+  backdrop-filter:blur(14px);
+  background:linear-gradient(180deg, rgba(8,12,22,.88), rgba(8,12,22,.4));
   border-bottom:1px solid transparent;transition:border-color .3s;}
 nav.scrolled{border-bottom:1px solid var(--line)}
-.nav-in{max-width:1080px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-in{max-width:1140px;margin:0 auto;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:11px;font-family:'Space Grotesk';font-weight:600;letter-spacing:.2px}
 .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 12px var(--mint);animation:pulse 2.4s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
-.nav-links{display:flex;gap:6px;align-items:center}
-.nav-links a{font-size:13px;color:var(--muted);padding:7px 12px;border-radius:8px;transition:.2s;font-weight:500}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.78)}}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{font-size:13px;color:var(--muted);padding:7px 11px;border-radius:8px;transition:.2s;font-weight:500}
 .nav-links a:hover{color:var(--ink);background:var(--panel)}
-.nav-cta{font-family:'JetBrains Mono';font-size:12.5px;color:var(--amber)!important;border:1px solid var(--line)}
-.nav-cta:hover{border-color:var(--amber);background:rgba(245,177,76,.08)!important;color:var(--amber)!important}
-.burger{display:none;background:none;border:1px solid var(--line);border-radius:8px;width:38px;height:38px;color:var(--ink);cursor:pointer}
+.mode-toggle{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono';font-size:11.5px;color:var(--muted);
+  border:1px solid var(--line);border-radius:9px;padding:6px 10px;cursor:pointer;background:none;transition:.2s}
+.mode-toggle:hover{border-color:var(--line-2)}
+.switch{width:34px;height:18px;border-radius:20px;background:var(--line);position:relative;transition:.25s;flex:none}
+.switch::after{content:'';position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:var(--muted);transition:.25s}
+.mode-toggle.on .switch{background:rgba(94,234,212,.3)}
+.mode-toggle.on .switch::after{left:18px;background:var(--mint)}
+.mode-toggle.on{color:var(--mint);border-color:rgba(94,234,212,.3)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:8px;width:38px;height:38px;color:var(--ink);cursor:pointer;font-size:18px}
 
-/* ---------- hero ---------- */
-header{position:relative;z-index:2;padding:148px 0 70px;min-height:100vh;display:flex;align-items:center}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;width:100%}
-.eyebrow{font-family:'JetBrains Mono';font-size:12.5px;color:var(--mint);letter-spacing:1px;display:inline-flex;align-items:center;gap:9px;margin-bottom:22px}
+/* hero */
+header{position:relative;z-index:2;padding:138px 0 64px;min-height:100vh;display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center;width:100%}
+.eyebrow{font-family:'JetBrains Mono';font-size:12px;color:var(--mint);letter-spacing:1px;display:inline-flex;align-items:center;gap:9px;margin-bottom:22px}
 .eyebrow::before{content:'';width:26px;height:1px;background:var(--mint)}
-h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-1.5px;margin-bottom:22px}
+h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(34px,5.4vw,60px);line-height:1.04;letter-spacing:-1.4px;margin-bottom:20px}
 h1 .grad{background:linear-gradient(100deg,var(--amber),var(--mint));-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{font-size:17.5px;color:var(--muted);max-width:46ch;margin-bottom:30px}
+.lead{font-size:17px;color:var(--muted);max-width:50ch;margin-bottom:26px}
 .lead b{color:var(--ink);font-weight:600}
-.hero-cta{display:flex;gap:13px;flex-wrap:wrap}
-.btn{font-family:'JetBrains Mono';font-size:13.5px;padding:13px 20px;border-radius:11px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink);transition:.22s;display:inline-flex;align-items:center;gap:9px}
-.btn:hover{transform:translateY(-2px)}
-.btn.primary{background:var(--amber);color:#0B1120;border-color:var(--amber);font-weight:700}
+.hero-cta{display:flex;gap:11px;flex-wrap:wrap}
+.btn{font-family:'JetBrains Mono';font-size:13px;padding:12px 18px;border-radius:11px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink);transition:.2s;display:inline-flex;align-items:center;gap:8px}
+.btn:hover{transform:translateY(-2px);border-color:var(--line-2)}
+.btn.primary{background:var(--amber);color:#080C16;border-color:var(--amber);font-weight:700}
 .btn.primary:hover{box-shadow:0 10px 30px -10px rgba(245,177,76,.6)}
 .btn.ghost:hover{border-color:var(--mint);color:var(--mint)}
+.btn.small{font-size:12px;padding:9px 14px}
 
-/* ---------- terminal ---------- */
-.terminal{background:rgba(15,23,41,.85);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:0 30px 80px -30px rgba(0,0,0,.8);backdrop-filter:blur(6px)}
-.term-bar{display:flex;align-items:center;gap:8px;padding:11px 15px;background:rgba(19,28,48,.9);border-bottom:1px solid var(--line)}
-.term-bar .tl{width:11px;height:11px;border-radius:50%}
+/* control panel (hero right) */
+.panel-stack{display:flex;flex-direction:column;gap:14px}
+.ctrl{background:var(--glass);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;backdrop-filter:blur(8px);box-shadow:0 30px 70px -34px rgba(0,0,0,.85)}
+.ctrl-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;background:rgba(15,22,38,.85);border-bottom:1px solid var(--line)}
+.ctrl-bar .tl{width:10px;height:10px;border-radius:50%}
 .tl.r{background:#F2779A}.tl.y{background:#F5B14C}.tl.g{background:#5EEAD4}
-.term-title{font-family:'JetBrains Mono';font-size:11.5px;color:var(--dim);margin-left:8px}
-.term-body{padding:18px;font-family:'JetBrains Mono';font-size:13px;min-height:228px}
+.ctrl-title{font-family:'JetBrains Mono';font-size:11px;color:var(--dim);margin-left:6px}
+.ctrl-live{margin-left:auto;font-family:'JetBrains Mono';font-size:10px;color:var(--mint);display:flex;align-items:center;gap:6px}
+.ctrl-live::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--mint);box-shadow:0 0 8px var(--mint);animation:pulse 2s infinite}
+.term-body{padding:16px;font-family:'JetBrains Mono';font-size:12.5px;min-height:186px}
 .t-line{margin-bottom:3px;white-space:pre-wrap;word-break:break-word}
-.t-prompt{color:var(--mint)}.t-kw{color:var(--amber)}.t-str{color:#9FD8C3}.t-com{color:var(--dim)}
-.t-out{color:var(--ink)}.t-num{color:var(--rose)}
-.cursor{display:inline-block;width:8px;height:15px;background:var(--mint);vertical-align:-2px;animation:blink 1s step-end infinite}
+.t-prompt{color:var(--mint)}.t-kw{color:var(--amber)}.t-com{color:var(--dim)}.t-out{color:var(--ink)}.t-num{color:var(--rose)}
+.cursor{display:inline-block;width:8px;height:14px;background:var(--mint);vertical-align:-2px;animation:blink 1s step-end infinite}
 @keyframes blink{50%{opacity:0}}
+/* live metrics */
+.metrics-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+.mm{background:var(--panel-2);padding:13px 12px;text-align:center}
+.mm .num{font-family:'Space Grotesk';font-weight:700;font-size:21px;color:var(--amber);line-height:1}
+.mm .lbl{font-family:'JetBrains Mono';font-size:9.5px;color:var(--dim);margin-top:5px;letter-spacing:.3px}
 
-/* ---------- section frame ---------- */
-section{position:relative;z-index:2;padding:84px 0}
-.sec-head{margin-bottom:42px}
-.sec-tag{font-family:'JetBrains Mono';font-size:12px;color:var(--amber);letter-spacing:1.5px;display:block;margin-bottom:12px}
-.sec-title{font-family:'Space Grotesk';font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.8px;line-height:1.1}
-.sec-sub{color:var(--muted);margin-top:12px;max-width:60ch;font-size:15.5px}
+/* sections */
+section{position:relative;z-index:2;padding:78px 0}
+.sec-head{margin-bottom:38px}
+.sec-tag{font-family:'JetBrains Mono';font-size:11.5px;color:var(--amber);letter-spacing:1.5px;display:block;margin-bottom:11px}
+.sec-title{font-family:'Space Grotesk';font-weight:700;font-size:clamp(25px,3.4vw,36px);letter-spacing:-.7px;line-height:1.12}
+.sec-sub{color:var(--muted);margin-top:11px;max-width:62ch;font-size:15px}
 
-/* ---------- pipeline ---------- */
-.pipe{position:relative;padding-left:34px}
-.pipe::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--amber),var(--mint),transparent)}
-.stage{position:relative;margin-bottom:18px;opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}
-.stage.in{opacity:1;transform:none}
-.stage::before{content:'';position:absolute;left:-33px;top:24px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:2px solid var(--amber);box-shadow:0 0 0 4px var(--bg)}
-.stage.live::before{border-color:var(--mint);box-shadow:0 0 0 4px var(--bg),0 0 16px var(--mint);animation:pulse 2s infinite}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;transition:.25s}
-.card:hover{border-color:var(--dim);transform:translateX(4px)}
-.stage-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:6px}
-.stage-role{font-family:'Space Grotesk';font-weight:600;font-size:18.5px}
-.stage-org{color:var(--amber);font-size:14.5px;font-weight:500}
-.stage-when{font-family:'JetBrains Mono';font-size:11.5px;color:var(--dim);white-space:nowrap}
-.badge{font-family:'JetBrains Mono';font-size:10px;padding:3px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:.5px}
-.badge.now{background:rgba(94,234,212,.12);color:var(--mint);border:1px solid rgba(94,234,212,.3)}
-.op{font-family:'JetBrains Mono';font-size:11px;color:var(--mint);margin:10px 0 4px;letter-spacing:.5px}
-.stage ul{list-style:none;margin-top:8px}
-.stage li{position:relative;padding-left:20px;color:var(--muted);font-size:14.5px;margin-bottom:7px}
-.stage li::before{content:'→';position:absolute;left:0;color:var(--dim)}
-.stage li b{color:var(--ink);font-weight:600}
-.metrics{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-.metric{font-family:'JetBrains Mono';font-size:11.5px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 11px;color:var(--mint)}
-.metric b{color:var(--amber)}
-
-/* ---------- query playground ---------- */
-.play{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
-.play-grid{display:grid;grid-template-columns:1fr 1fr}
-.play-side{padding:22px;border-right:1px solid var(--line)}
-.play-side h4{font-family:'JetBrains Mono';font-size:12px;color:var(--dim);letter-spacing:1px;margin-bottom:14px}
-.q-btn{display:block;width:100%;text-align:left;font-family:'JetBrains Mono';font-size:12.5px;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:11px 13px;margin-bottom:9px;cursor:pointer;transition:.2s;line-height:1.4}
-.q-btn:hover{border-color:var(--amber);color:var(--ink)}
+/* query console */
+.console{background:var(--glass);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;backdrop-filter:blur(8px)}
+.console-grid{display:grid;grid-template-columns:.95fr 1.05fr}
+.cq-side{padding:20px;border-right:1px solid var(--line)}
+.cq-side h4{font-family:'JetBrains Mono';font-size:11px;color:var(--dim);letter-spacing:1px;margin-bottom:13px}
+.q-btn{display:flex;align-items:center;gap:9px;width:100%;text-align:left;font-size:13px;color:var(--muted);background:var(--panel-2);border:1px solid var(--line);border-radius:9px;padding:10px 12px;margin-bottom:8px;cursor:pointer;transition:.18s;line-height:1.4}
+.q-btn:hover{border-color:var(--line-2);color:var(--ink)}
 .q-btn.active{border-color:var(--mint);color:var(--mint);background:rgba(94,234,212,.06)}
-.q-btn .kw{color:var(--amber)}
-.play-out{padding:0;background:var(--bg-2);display:flex;flex-direction:column}
-.po-bar{padding:10px 16px;border-bottom:1px solid var(--line);font-family:'JetBrains Mono';font-size:11px;color:var(--dim);display:flex;justify-content:space-between}
-.po-body{padding:18px;font-family:'JetBrains Mono';font-size:12.5px;flex:1;overflow:auto}
-.rowline{display:flex;gap:8px;padding:6px 0;border-bottom:1px dashed var(--line);color:var(--muted)}
-.rowline .k{color:var(--mint);min-width:128px}
-.rowline .v{color:var(--ink)}
-.qhint{font-family:'JetBrains Mono';font-size:11px;color:var(--dim);margin-top:14px;line-height:1.6}
+.q-btn .qi{font-family:'JetBrains Mono';color:var(--amber);font-size:11px;flex:none}
+.cq-out{background:var(--bg-2);display:flex;flex-direction:column;min-height:280px}
+.cq-obar{padding:10px 16px;border-bottom:1px solid var(--line);font-family:'JetBrains Mono';font-size:11px;color:var(--dim);display:flex;justify-content:space-between;align-items:center}
+.cq-verdict{font-family:'JetBrains Mono';font-size:10px;padding:2px 8px;border-radius:6px;background:rgba(94,234,212,.12);color:var(--mint);border:1px solid rgba(94,234,212,.3)}
+.cq-body{padding:18px;flex:1}
+.cq-body .ans{font-size:15px;color:var(--ink);margin-bottom:14px;line-height:1.55}
+.cq-ev{list-style:none}
+.cq-ev li{position:relative;padding-left:20px;font-size:13.5px;color:var(--muted);margin-bottom:8px;font-family:'JetBrains Mono'}
+.cq-ev li::before{content:'▸';position:absolute;left:0;color:var(--mint)}
+.cq-ev li b{color:var(--amber);font-weight:500}
 
-/* ---------- skills matrix ---------- */
-.matrix{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.mcol{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px}
-.mcol h4{font-family:'JetBrains Mono';font-size:12.5px;color:var(--amber);letter-spacing:.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.mcol h4 .sq{width:7px;height:7px;background:var(--amber)}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font-family:'JetBrains Mono';font-size:12px;padding:6px 11px;border-radius:8px;background:var(--bg);border:1px solid var(--line);color:var(--muted);transition:.2s;cursor:default}
-.chip:hover{border-color:var(--mint);color:var(--mint);transform:translateY(-2px)}
+/* role decoder */
+.fit-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:20px}
+.fit-tab{font-family:'JetBrains Mono';font-size:12px;padding:9px 14px;border-radius:10px;background:var(--panel);border:1px solid var(--line);color:var(--muted);cursor:pointer;transition:.18s}
+.fit-tab:hover{border-color:var(--line-2);color:var(--ink)}
+.fit-tab.active{background:var(--amber);color:#080C16;border-color:var(--amber);font-weight:700}
+.fit-panel{background:var(--glass);border:1px solid var(--line);border-radius:var(--r);padding:24px;backdrop-filter:blur(8px)}
+.fit-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;margin-bottom:4px}
+.fit-role{font-family:'Space Grotesk';font-weight:600;font-size:19px}
+.fit-score{font-family:'JetBrains Mono';font-size:12.5px;color:var(--mint)}
+.fit-co{color:var(--dim);font-size:13px;margin-bottom:18px;font-family:'JetBrains Mono'}
+.fit-cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:18px}
+.fit-cols h5{font-family:'JetBrains Mono';font-size:10.5px;letter-spacing:1px;color:var(--dim);margin-bottom:11px;text-transform:uppercase}
+.fit-cols ul{list-style:none}
+.fit-cols li{position:relative;padding-left:18px;font-size:13.5px;margin-bottom:8px;color:var(--muted);line-height:1.45}
+.need-col li::before{content:'○';position:absolute;left:0;color:var(--dim);font-size:11px;top:2px}
+.have-col li::before{content:'●';position:absolute;left:0;color:var(--mint);font-size:11px;top:2px}
+.have-col li b{color:var(--ink);font-weight:600}
+.fit-proof{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:13px 15px;margin-bottom:14px;font-size:13.5px;color:var(--muted)}
+.fit-proof b{color:var(--amber);font-family:'JetBrains Mono';font-size:11px;letter-spacing:.5px;display:block;margin-bottom:4px;text-transform:uppercase}
+.fit-kw{display:flex;flex-wrap:wrap;gap:7px}
+.kw{font-family:'JetBrains Mono';font-size:11px;padding:4px 9px;border-radius:7px;background:var(--bg);border:1px solid var(--line);color:var(--dim)}
 
-/* ---------- fit / schema mapper ---------- */
-.fit-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
-.fit-tab{font-family:'JetBrains Mono';font-size:12.5px;padding:10px 16px;border-radius:10px;background:var(--panel);border:1px solid var(--line);color:var(--muted);cursor:pointer;transition:.2s}
-.fit-tab.active{background:var(--amber);color:#0B1120;border-color:var(--amber);font-weight:700}
-.fit-panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:26px}
-.fit-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;margin-bottom:6px}
-.fit-role{font-family:'Space Grotesk';font-weight:600;font-size:20px}
-.fit-score{font-family:'JetBrains Mono';font-size:13px;color:var(--mint)}
-.fit-co{color:var(--dim);font-size:13.5px;margin-bottom:20px;font-family:'JetBrains Mono'}
-.maprow{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}
-.need{font-size:13.5px;color:var(--muted)}
-.arrow{font-family:'JetBrains Mono';color:var(--amber);font-size:13px}
-.have{font-size:13.5px;color:var(--ink);text-align:right}
-.have b{color:var(--mint);font-weight:600}
-@media(max-width:560px){.maprow{grid-template-columns:1fr;gap:3px}.have{text-align:left}.arrow{display:none}}
+/* system map */
+.map-wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+.map-svg-box{background:var(--glass);border:1px solid var(--line);border-radius:var(--r);padding:14px;backdrop-filter:blur(8px);position:relative}
+.node{cursor:pointer;transition:.2s}
+.node rect{fill:var(--panel-2);stroke:var(--line);stroke-width:1.2;transition:.2s}
+.node text{fill:var(--muted);font-family:'JetBrains Mono';font-size:9.5px;transition:.2s}
+.node:hover rect,.node.sel rect{stroke:var(--mint);fill:rgba(94,234,212,.08)}
+.node:hover text,.node.sel text{fill:var(--mint)}
+.edge{stroke:var(--line);stroke-width:1.4;fill:none}
+.edge.flow{stroke:var(--amber);stroke-dasharray:4 6;animation:dash 1.4s linear infinite;opacity:.55}
+@keyframes dash{to{stroke-dashoffset:-20}}
+.map-detail{background:var(--glass);border:1px solid var(--line);border-radius:var(--r);padding:20px;backdrop-filter:blur(8px);min-height:200px}
+.map-detail .md-name{font-family:'Space Grotesk';font-weight:600;font-size:18px;color:var(--mint);margin-bottom:4px}
+.map-detail .md-cat{font-family:'JetBrains Mono';font-size:10.5px;color:var(--dim);letter-spacing:.5px;margin-bottom:14px}
+.map-detail .md-desc{font-size:14px;color:var(--muted);margin-bottom:14px;line-height:1.5}
+.map-detail .md-row{display:flex;gap:8px;font-size:12.5px;margin-bottom:9px;font-family:'JetBrains Mono'}
+.map-detail .md-row .lab{color:var(--dim);min-width:62px;flex:none}
+.map-detail .md-row .val{color:var(--ink)}
+.map-detail .md-metric{display:inline-block;margin-top:6px;font-family:'JetBrains Mono';font-size:11.5px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 11px;color:var(--amber)}
 
-/* ---------- projects ---------- */
+/* project lab */
 .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.proj{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:.25s;position:relative;overflow:hidden}
+.proj{background:var(--glass);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:.25s;position:relative;overflow:hidden;backdrop-filter:blur(8px);cursor:pointer}
 .proj::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--amber),var(--mint));transform:scaleX(0);transform-origin:left;transition:.35s}
 .proj:hover::after{transform:scaleX(1)}
-.proj:hover{transform:translateY(-4px);border-color:var(--dim)}
-.proj-tag{font-family:'JetBrains Mono';font-size:10.5px;color:var(--mint);letter-spacing:1px;text-transform:uppercase}
-.proj h4{font-family:'Space Grotesk';font-weight:600;font-size:18px;margin:9px 0}
-.proj p{color:var(--muted);font-size:14px;margin-bottom:14px}
-.proj .pstack{display:flex;flex-wrap:wrap;gap:6px}
-.pstack span{font-family:'JetBrains Mono';font-size:10.5px;color:var(--dim);background:var(--bg);padding:3px 8px;border-radius:6px;border:1px solid var(--line)}
+.proj:hover{transform:translateY(-4px);border-color:var(--line-2)}
+.proj.flagship{grid-column:span 2;background:linear-gradient(135deg,rgba(167,139,250,.08),var(--glass) 55%);border-color:rgba(167,139,250,.3)}
+.proj.flagship::after{background:linear-gradient(90deg,var(--violet),var(--mint))}
+.proj-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:9px}
+.proj-tag{font-family:'JetBrains Mono';font-size:10px;color:var(--mint);letter-spacing:1px;text-transform:uppercase}
+.proj.flagship .proj-tag{color:var(--violet)}
+.flag-badge{font-family:'JetBrains Mono';font-size:9.5px;padding:3px 9px;border-radius:6px;background:rgba(167,139,250,.15);color:var(--violet);border:1px solid rgba(167,139,250,.3);letter-spacing:.5px}
+.proj h4{font-family:'Space Grotesk';font-weight:600;font-size:18px;margin-bottom:8px}
+.proj .pteaser{color:var(--muted);font-size:14px;margin-bottom:13px}
+.pstack{display:flex;flex-wrap:wrap;gap:6px}
+.pstack span{font-family:'JetBrains Mono';font-size:10px;color:var(--dim);background:var(--bg);padding:3px 8px;border-radius:6px;border:1px solid var(--line)}
+.expand-hint{font-family:'JetBrains Mono';font-size:11px;color:var(--amber);margin-top:13px;display:flex;align-items:center;gap:6px}
 
-/* ---------- contact ---------- */
-.contact{text-align:center;padding:96px 0 84px}
-.contact h2{font-family:'Space Grotesk';font-weight:700;font-size:clamp(28px,4.5vw,46px);letter-spacing:-1px;margin-bottom:16px}
+/* modal */
+.modal-bg{position:fixed;inset:0;z-index:100;background:rgba(5,8,15,.82);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:20px}
+.modal-bg.open{display:flex}
+.modal{background:var(--bg-2);border:1px solid var(--line-2);border-radius:16px;max-width:720px;width:100%;max-height:88vh;overflow-y:auto;box-shadow:0 40px 100px -30px rgba(0,0,0,.9)}
+.modal-head{position:sticky;top:0;background:var(--bg-2);padding:22px 26px 16px;border-bottom:1px solid var(--line);z-index:2}
+.modal-head .mtag{font-family:'JetBrains Mono';font-size:10.5px;color:var(--mint);letter-spacing:1px;text-transform:uppercase}
+.modal-head h3{font-family:'Space Grotesk';font-weight:700;font-size:24px;margin:7px 0 0;letter-spacing:-.4px}
+.modal-close{position:absolute;top:18px;right:20px;background:none;border:1px solid var(--line);color:var(--muted);width:34px;height:34px;border-radius:9px;cursor:pointer;font-size:16px;transition:.2s}
+.modal-close:hover{border-color:var(--rose);color:var(--rose)}
+.modal-body{padding:22px 26px 28px}
+.mblock{margin-bottom:18px}
+.mblock h6{font-family:'JetBrains Mono';font-size:10.5px;color:var(--amber);letter-spacing:1px;text-transform:uppercase;margin-bottom:7px}
+.mblock p{font-size:14.5px;color:var(--muted);line-height:1.6}
+.mblock ul{list-style:none;margin-top:4px}
+.mblock li{position:relative;padding-left:19px;font-size:14px;color:var(--muted);margin-bottom:7px;line-height:1.5}
+.mblock li::before{content:'→';position:absolute;left:0;color:var(--mint)}
+.mblock li b{color:var(--ink);font-weight:600}
+.signal-box{background:linear-gradient(135deg,rgba(94,234,212,.07),transparent);border:1px solid rgba(94,234,212,.25);border-radius:11px;padding:14px 16px}
+.signal-box p{color:var(--ink)}
+
+/* career pipeline */
+.pipe{position:relative;padding-left:34px}
+.pipe::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--amber),var(--mint),transparent)}
+.stage{position:relative;margin-bottom:18px;opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.stage.in{opacity:1;transform:none}
+.stage::before{content:'';position:absolute;left:-33px;top:24px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:2px solid var(--amber);box-shadow:0 0 0 4px var(--bg)}
+.stage.live::before{border-color:var(--mint);box-shadow:0 0 0 4px var(--bg),0 0 14px var(--mint);animation:pulse 2s infinite}
+.card{background:var(--glass);border:1px solid var(--line);border-radius:var(--r);padding:21px 23px;transition:.25s;backdrop-filter:blur(8px)}
+.card:hover{border-color:var(--line-2);transform:translateX(4px)}
+.stage-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:5px}
+.stage-role{font-family:'Space Grotesk';font-weight:600;font-size:18px}
+.stage-org{color:var(--amber);font-size:14px;font-weight:500}
+.stage-when{font-family:'JetBrains Mono';font-size:11px;color:var(--dim);white-space:nowrap}
+.badge{font-family:'JetBrains Mono';font-size:9.5px;padding:3px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:.5px}
+.badge.now{background:rgba(94,234,212,.12);color:var(--mint);border:1px solid rgba(94,234,212,.3)}
+.op{font-family:'JetBrains Mono';font-size:10.5px;color:var(--mint);margin:9px 0 4px;letter-spacing:.5px}
+.stage ul{list-style:none;margin-top:7px}
+.stage li{position:relative;padding-left:20px;color:var(--muted);font-size:14px;margin-bottom:6px}
+.stage li::before{content:'→';position:absolute;left:0;color:var(--dim)}
+.stage li b{color:var(--ink);font-weight:600}
+.stg-metrics{display:flex;gap:9px;flex-wrap:wrap;margin-top:13px}
+.metric{font-family:'JetBrains Mono';font-size:11px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 11px;color:var(--mint)}
+.metric b{color:var(--amber)}
+
+/* skills OS */
+.os-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.os-col{background:var(--glass);border:1px solid var(--line);border-radius:var(--r);padding:19px 21px;backdrop-filter:blur(8px)}
+.os-col h4{font-family:'JetBrains Mono';font-size:12px;color:var(--amber);letter-spacing:.5px;margin-bottom:13px;display:flex;align-items:center;gap:8px}
+.os-col h4 .sq{width:7px;height:7px;background:var(--amber)}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-family:'JetBrains Mono';font-size:11.5px;padding:6px 11px;border-radius:8px;background:var(--bg);border:1px solid var(--line);color:var(--muted);transition:.18s;cursor:pointer}
+.chip:hover{border-color:var(--mint);color:var(--mint);transform:translateY(-2px)}
+.chip.has-proof{border-color:var(--line-2)}
+.chip.has-proof::after{content:'·';color:var(--amber);margin-left:4px;font-weight:700}
+.skill-proof{margin-top:16px;background:var(--panel-2);border:1px solid var(--line);border-radius:11px;padding:0;max-height:0;overflow:hidden;transition:.3s;opacity:0}
+.skill-proof.show{padding:14px 16px;max-height:160px;opacity:1;border-color:rgba(94,234,212,.25)}
+.skill-proof .sp-name{font-family:'JetBrains Mono';font-size:12px;color:var(--mint);margin-bottom:5px}
+.skill-proof .sp-text{font-size:13.5px;color:var(--muted)}
+.skill-proof .sp-text b{color:var(--ink)}
+
+/* evidence dashboard */
+.ev-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ev{background:var(--glass);border:1px solid var(--line);border-radius:var(--r);padding:19px 17px;backdrop-filter:blur(8px);transition:.2s;position:relative;overflow:hidden}
+.ev:hover{border-color:var(--line-2);transform:translateY(-3px)}
+.ev .ev-num{font-family:'Space Grotesk';font-weight:700;font-size:30px;line-height:1;background:linear-gradient(100deg,var(--amber),var(--mint));-webkit-background-clip:text;background-clip:text;color:transparent}
+.ev .ev-lbl{font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.35}
+.ev.special .ev-num{font-size:20px;padding-top:6px}
+
+/* contact */
+.contact{text-align:center;padding:92px 0 80px}
+.contact h2{font-family:'Space Grotesk';font-weight:700;font-size:clamp(27px,4.2vw,44px);letter-spacing:-1px;margin-bottom:15px}
 .contact h2 .grad{background:linear-gradient(100deg,var(--amber),var(--mint));-webkit-background-clip:text;background-clip:text;color:transparent}
-.contact p{color:var(--muted);max-width:48ch;margin:0 auto 30px;font-size:16px}
-.contact-row{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
-footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--dim);font-family:'JetBrains Mono';font-size:11.5px;position:relative;z-index:2}
-.status-line{display:inline-flex;align-items:center;gap:8px;margin-bottom:8px;color:var(--mint)}
+.contact p{color:var(--muted);max-width:54ch;margin:0 auto 28px;font-size:16px}
+.contact-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.status-line{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;color:var(--mint);font-family:'JetBrains Mono';font-size:12.5px}
 .status-line .dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 8px var(--mint);animation:pulse 2s infinite}
+footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--dim);font-family:'JetBrains Mono';font-size:11px;position:relative;z-index:2}
+
+/* briefing modal reuse */
+.briefing-body{padding:22px 26px 28px;font-size:14.5px;color:var(--muted);line-height:1.7}
+.briefing-body b{color:var(--ink)}
+.briefing-body .bf-metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.briefing-body .bf-metrics span{font-family:'JetBrains Mono';font-size:11px;background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:5px 10px;color:var(--mint)}
+.copy-row{display:flex;gap:10px;margin-top:20px}
+
+/* recruiter mode */
+body.recruiter .field,body.recruiter .grid-bg{opacity:.12}
+body.recruiter .lead,body.recruiter .sec-sub{display:none}
+body.recruiter section{padding:46px 0}
+body.recruiter header{padding:120px 0 40px;min-height:auto}
+.recruiter-note{display:none;font-family:'JetBrains Mono';font-size:11px;color:var(--amber);border:1px dashed var(--line-2);border-radius:9px;padding:8px 13px;margin-bottom:18px}
+body.recruiter .recruiter-note{display:inline-block}
 
 /* reveal */
-.rev{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.rev{opacity:0;transform:translateY(22px);transition:.7s cubic-bezier(.2,.7,.2,1)}
 .rev.in{opacity:1;transform:none}
 
-@media(max-width:860px){
-  .hero-grid{grid-template-columns:1fr;gap:36px}
-  .play-grid{grid-template-columns:1fr}
-  .play-side{border-right:none;border-bottom:1px solid var(--line)}
-  .matrix,.proj-grid{grid-template-columns:1fr}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .console-grid{grid-template-columns:1fr}
+  .cq-side{border-right:none;border-bottom:1px solid var(--line)}
+  .map-wrap{grid-template-columns:1fr}
+  .os-grid,.proj-grid{grid-template-columns:1fr}
+  .proj.flagship{grid-column:span 1}
+  .fit-cols{grid-template-columns:1fr;gap:14px}
+  .ev-grid{grid-template-columns:repeat(2,1fr)}
   .nav-links{display:none}
-  .nav-links.open{display:flex;position:absolute;top:62px;right:18px;left:18px;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px}
+  .nav-links.open{display:flex;position:absolute;top:60px;right:16px;left:16px;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px}
   .nav-links.open a{padding:11px}
+  .nav-links.open .mode-toggle{margin-top:6px}
   .burger{display:block}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.1ms!important}
+  html{scroll-behavior:auto}
+  .rev,.stage{opacity:1;transform:none}
 }
 </style>
 </head>
 <body>
 <div class="vignette"></div>
+<div class="grid-bg"></div>
 <div class="field"><canvas id="flow"></canvas></div>
 
-<nav id="nav">
+<nav id="nav" aria-label="Primary">
   <div class="nav-in">
-    <a href="#top" class="brand"><span class="dot"></span> rutuja.mahajan</a>
-    <button class="burger" id="burger" aria-label="Menu">≡</button>
+    <a href="#top" class="brand"><span class="dot" aria-hidden="true"></span> rutuja.mahajan</a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">≡</button>
     <div class="nav-links" id="links">
-      <a href="#pipeline">Pipeline</a>
-      <a href="#query">Query me</a>
-      <a href="#fit">Role fit</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact" class="nav-cta">→ get in touch</a>
+      <a href="#console">Query</a>
+      <a href="#roles">Role fit</a>
+      <a href="#map">System map</a>
+      <a href="#lab">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#contact">Contact</a>
+      <button class="mode-toggle" id="modeToggle" aria-pressed="false" title="Toggle a concise, proof-heavy view for recruiters">
+        <span class="switch" aria-hidden="true"></span> Recruiter mode
+      </button>
     </div>
   </div>
 </nav>
@@ -223,31 +356,132 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
 <header>
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">DATA ANALYST · DUBLIN, IE</span>
-      <h1>I turn manual chaos into <span class="grad">clean, queryable systems.</span></h1>
-      <p class="lead">I'm <b>Rutuja Mahajan</b> - a data analyst who builds the pipelines behind good decisions. I take messy inputs from a dozen sources and ship <b>accurate, automated, supportable</b> data that people actually trust. Python, SQL, cloud, BI.</p>
+      <span class="eyebrow">DATA, AI &amp; ML · DUBLIN, IRELAND</span>
+      <h1>I build the systems between <span class="grad">messy data and intelligent decisions.</span></h1>
+      <p class="lead">I'm <b>Rutuja Mahajan</b> - a Data, AI &amp; ML professional in Dublin. I design <b>decision-intelligence systems</b>: from data pipelines and SQL analytics to machine-learning models, LLM/RAG prototypes, cloud dashboards, and human-readable insight. MSc Computer Science at UCD, currently building healthcare data systems at HealthBeacon.</p>
       <div class="hero-cta">
-        <a href="#query" class="btn primary">▶ run a query about me</a>
-        <a href="#contact" class="btn ghost">say hello</a>
+        <a href="#roles" class="btn primary">▶ explore role fit</a>
+        <a href="#console" class="btn ghost">run recruiter query</a>
+        <a href="#lab" class="btn">view projects</a>
+        <button class="btn" id="briefBtn" type="button">⚡ generate briefing</button>
       </div>
     </div>
-    <div class="terminal" id="hero-term">
-      <div class="term-bar">
-        <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
-        <span class="term-title mono">~/career - analyst@pipeline</span>
+    <div class="panel-stack">
+      <div class="ctrl">
+        <div class="ctrl-bar">
+          <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
+          <span class="ctrl-title mono">control-room · status</span>
+          <span class="ctrl-live mono">live</span>
+        </div>
+        <div class="term-body" id="hero-out" aria-hidden="true"></div>
       </div>
-      <div class="term-body" id="hero-out"></div>
+      <div class="ctrl">
+        <div class="metrics-mini" id="metricsMini">
+          <div class="mm"><div class="num" data-target="9" data-suffix="">0</div><div class="lbl">SOURCES UNIFIED</div></div>
+          <div class="mm"><div class="num" data-target="2" data-suffix="d/wk">0</div><div class="lbl">ANALYST TIME SAVED</div></div>
+          <div class="mm"><div class="num" data-target="8" data-suffix="">0</div><div class="lbl">DASHBOARDS ADOPTED</div></div>
+          <div class="mm"><div class="num" data-target="19" data-suffix="%">0</div><div class="lbl">ML PERF GAIN</div></div>
+          <div class="mm"><div class="num" data-target="12" data-prefix="€" data-suffix="k">0</div><div class="lbl">COST AVOIDED</div></div>
+          <div class="mm"><div class="num" data-target="5" data-suffix="">0</div><div class="lbl">CLIENT ACCOUNTS</div></div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- PIPELINE -->
-<section id="pipeline">
+<!-- QUERY CONSOLE -->
+<section id="console">
   <div class="wrap">
     <div class="sec-head rev">
-      <span class="sec-tag">01 - THE PIPELINE</span>
-      <h2 class="sec-title">Every role was a transformation stage.</h2>
-      <p class="sec-sub">Raw experience in, validated insight out. Here's how the data of my career flows - from automation testing all the way to live healthcare reconciliation.</p>
+      <span class="sec-tag">01 · RECRUITER QUERY CONSOLE</span>
+      <h2 class="sec-title">Ask the questions you'd ask in a screening call.</h2>
+      <p class="sec-sub">Recruiters tend to ask the same things. So I made the answers queryable - each one returns concise evidence from real work, not adjectives.</p>
+    </div>
+    <div class="console rev">
+      <div class="console-grid">
+        <div class="cq-side">
+          <h4>// COMMON QUESTIONS</h4>
+          <button class="q-btn active" data-q="ai"><span class="qi">?</span> Can she build AI / LLM systems?</button>
+          <button class="q-btn" data-q="messy"><span class="qi">?</span> Can she work with messy data?</button>
+          <button class="q-btn" data-q="ml"><span class="qi">?</span> Can she build ML models?</button>
+          <button class="q-btn" data-q="health"><span class="qi">?</span> Can she work in healthcare?</button>
+          <button class="q-btn" data-q="comms"><span class="qi">?</span> Can she explain work to stakeholders?</button>
+          <button class="q-btn" data-q="aieng"><span class="qi">?</span> Suitable for AI Engineer roles?</button>
+          <button class="q-btn" data-q="ds"><span class="qi">?</span> Suitable for Data Scientist roles?</button>
+          <button class="q-btn" data-q="da"><span class="qi">?</span> Suitable for Data Analyst roles?</button>
+          <button class="q-btn" data-q="mle"><span class="qi">?</span> Suitable for ML Engineer roles?</button>
+        </div>
+        <div class="cq-out">
+          <div class="cq-obar mono"><span id="cqName">query</span><span class="cq-verdict" id="cqVerdict">●</span></div>
+          <div class="cq-body" id="cqBody"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROLE DECODER -->
+<section id="roles">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="sec-tag">02 · ROLE DECODER</span>
+      <h2 class="sec-title">One profile, mapped to the role you're hiring for.</h2>
+      <p class="sec-sub">Pick the role. For each, I map what the job typically needs to my actual evidence - plus the single project or experience that proves it best.</p>
+      <div class="recruiter-note">RECRUITER MODE: storytelling trimmed, proof and metrics first.</div>
+    </div>
+    <div class="fit-tabs rev" role="tablist" aria-label="Roles">
+      <button class="fit-tab active" data-f="aieng" role="tab">AI Engineer</button>
+      <button class="fit-tab" data-f="mle" role="tab">ML Engineer</button>
+      <button class="fit-tab" data-f="ds" role="tab">Data Scientist</button>
+      <button class="fit-tab" data-f="nlp" role="tab">NLP Data Scientist</button>
+      <button class="fit-tab" data-f="da" role="tab">Data Analyst</button>
+      <button class="fit-tab" data-f="ae" role="tab">Analytics Engineer</button>
+      <button class="fit-tab" data-f="de" role="tab">Data Engineer</button>
+    </div>
+    <div class="fit-panel rev" id="fitPanel" role="tabpanel"></div>
+  </div>
+</section>
+
+<!-- SYSTEM MAP -->
+<section id="map">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="sec-tag">03 · CAPABILITY SYSTEM MAP</span>
+      <h2 class="sec-title">How a raw signal becomes a decision.</h2>
+      <p class="sec-sub">My capabilities, wired as a pipeline. Click any node to see the proof - the experience, project, tools and impact behind it.</p>
+    </div>
+    <div class="map-wrap rev">
+      <div class="map-svg-box">
+        <svg id="mapSvg" viewBox="0 0 640 420" role="img" aria-label="Interactive capability pipeline map">
+          <!-- edges drawn by JS -->
+          <g id="edges"></g>
+          <g id="nodes"></g>
+        </svg>
+      </div>
+      <div class="map-detail" id="mapDetail" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT LAB -->
+<section id="lab">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="sec-tag">04 · PROJECT LAB</span>
+      <h2 class="sec-title">Case files - built end to end.</h2>
+      <p class="sec-sub">Each card is a working system, not a tutorial. Click to open the full case file: problem, what I built, stack, why it matters, and the recruiter signal.</p>
+    </div>
+    <div class="proj-grid rev" id="projGrid"></div>
+  </div>
+</section>
+
+<!-- CAREER PIPELINE -->
+<section id="career">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="sec-tag">05 · CAREER PIPELINE</span>
+      <h2 class="sec-title">Each role was a transformation stage.</h2>
+      <p class="sec-sub">From automation testing to threat-intelligence engineering to live healthcare reconciliation and sentiment AI - raw inputs in, validated decision-ready systems out.</p>
     </div>
     <div class="pipe" id="pipe">
 
@@ -255,25 +489,25 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
         <div class="card">
           <div class="stage-top">
             <div>
-              <div class="stage-role">Data Analyst Intern</div>
+              <div class="stage-role">Data Analyst Intern - Healthcare Data &amp; Sentiment AI</div>
               <div class="stage-org">HealthBeacon · Dublin</div>
             </div>
             <div style="text-align:right">
               <span class="badge now">● live</span>
-              <div class="stage-when mono" style="margin-top:6px">Jun 2026 - Present</div>
+              <div class="stage-when mono" style="margin-top:6px">Jun 2026 – Present</div>
             </div>
           </div>
-          <div class="op">EXTRACT → TRANSFORM → VALIDATE → REPORT</div>
+          <div class="op">INGEST → STANDARDISE → VALIDATE → MODEL → REPORT</div>
           <ul>
             <li>Designing a Python <b>reconciliation pipeline</b> for Pathfinder, a UK medication risk-management platform - matching manufacturer sales against prescription dispense records to flag compliance gaps by patient risk category.</li>
             <li>Built ingestion jobs that read, clean and standardise sales files from <b>9 manufacturers</b> across mismatched flat-file formats into one master dataset.</li>
-            <li>Implemented data-quality checks on order-to-dispense ratios, missing pharmacy IDs and exceptions so curated data stays accurate and review-ready.</li>
-            <li>Built a <b>Power BI</b> data model + KPI report; ran sentiment analysis on patient-care interactions, all under BitBucket.</li>
+            <li>Implemented data-quality checks on order-to-dispense ratios, missing pharmacy IDs and exceptions so curated data stays review-ready.</li>
+            <li>Built a <b>Power BI</b> data model + KPI report and developed <b>sentiment-analysis models</b> on patient-care interactions; versioned under BitBucket.</li>
           </ul>
-          <div class="metrics">
+          <div class="stg-metrics">
             <div class="metric">sources_unified: <b>9</b></div>
             <div class="metric">domain: <b>healthcare</b></div>
-            <div class="metric">tool: <b>Python · Power BI</b></div>
+            <div class="metric">signals: <b>NLP sentiment</b></div>
           </div>
         </div>
       </div>
@@ -282,19 +516,19 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
         <div class="card">
           <div class="stage-top">
             <div>
-              <div class="stage-role">Threat Intelligence Analyst</div>
+              <div class="stage-role">Threat Intelligence Analyst - Automation &amp; Operational Analytics</div>
               <div class="stage-org">Bharti Airtel · India</div>
             </div>
-            <div class="stage-when mono">Feb 2024 - Jun 2025</div>
+            <div class="stage-when mono">Feb 2024 – Jun 2025</div>
           </div>
-          <div class="op">AUTOMATE → STANDARDISE → DEFEND</div>
+          <div class="op">AUTOMATE → STANDARDISE → REPORT → DEFEND</div>
           <ul>
-            <li>Converted manual analysis into <b>Python ETL pipelines</b>, saving ~2 analyst-days per week and cutting weekly turnaround by <b>20%</b>.</li>
-            <li>Wrote <b>15+ SQL queries</b> (CTEs, window functions, query optimisation) to replace hand-built KPI reports in every client cycle.</li>
-            <li>Designed <b>8 Power BI dashboards</b> that became the standard format across <b>5 client accounts</b>, retiring ad-hoc slide decks.</li>
-            <li>Led <b>20+ brand-impersonation takedowns</b>, reducing vendor dependence for ~<b>€12,000</b> cost avoidance.</li>
+            <li>Built <b>Python ETL</b> to clean, transform and validate threat-intelligence data - saving ~<b>2 analyst-days/week</b> and cutting weekly turnaround by <b>20%</b>.</li>
+            <li>Wrote <b>15+ SQL queries</b> (CTEs, window functions, query optimisation) replacing hand-built KPI reports each client cycle.</li>
+            <li>Designed <b>8 Power BI dashboards</b> adopted as the standard across <b>5 client accounts</b>; trained 3 new analysts.</li>
+            <li>Led <b>20+ brand-impersonation takedowns</b> for ~<b>€12,000</b> cost avoidance; recognised with Execution Excellence.</li>
           </ul>
-          <div class="metrics">
+          <div class="stg-metrics">
             <div class="metric">time_saved: <b>2 days/wk</b></div>
             <div class="metric">dashboards: <b>8</b></div>
             <div class="metric">award: <b>Execution Excellence</b></div>
@@ -306,17 +540,17 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
         <div class="card">
           <div class="stage-top">
             <div>
-              <div class="stage-role">Automation Test Intern</div>
+              <div class="stage-role">Automation Test Intern - Workflow Scripting</div>
               <div class="stage-org">Colgate Global Business Services · India</div>
             </div>
-            <div class="stage-when mono">Jul 2023 - Dec 2023</div>
+            <div class="stage-when mono">Jul 2023 – Dec 2023</div>
           </div>
           <div class="op">OBSERVE → SCRIPT → STABILISE</div>
           <ul>
             <li>Worked with SAP users to convert manual workflows into <b>10+ UFT VBScript</b> automations - <b>30%</b> less manual testing effort.</li>
-            <li>Ran <b>6 test cycles</b> through ALM, investigated failures and resolved <b>20+ automation issues</b> for steadier execution.</li>
+            <li>Ran <b>6 ALM test cycles</b>, investigated failures and resolved <b>20+ automation issues</b> for steadier execution.</li>
           </ul>
-          <div class="metrics">
+          <div class="stg-metrics">
             <div class="metric">effort_cut: <b>30%</b></div>
             <div class="metric">issues_resolved: <b>20+</b></div>
           </div>
@@ -327,121 +561,40 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
   </div>
 </section>
 
-<!-- QUERY PLAYGROUND -->
-<section id="query">
-  <div class="wrap">
-    <div class="sec-head rev">
-      <span class="sec-tag">02 - QUERY ME</span>
-      <h2 class="sec-title">Don't read the résumé. Query it.</h2>
-      <p class="sec-sub">Recruiters ask the same questions a database does. So I made myself queryable. Pick a query - the result set is real.</p>
-    </div>
-    <div class="play rev">
-      <div class="play-grid">
-        <div class="play-side">
-          <h4>// SAVED QUERIES</h4>
-          <button class="q-btn active" data-q="impact"><span class="kw">SELECT</span> impact <span class="kw">FROM</span> experience;</button>
-          <button class="q-btn" data-q="stack"><span class="kw">SELECT</span> * <span class="kw">FROM</span> tech_stack;</button>
-          <button class="q-btn" data-q="etl"><span class="kw">SELECT</span> proof <span class="kw">WHERE</span> skill=<span style="color:#9FD8C3">'ETL'</span>;</button>
-          <button class="q-btn" data-q="domains"><span class="kw">SELECT</span> domains <span class="kw">FROM</span> career;</button>
-          <button class="q-btn" data-q="edu"><span class="kw">SELECT</span> * <span class="kw">FROM</span> education;</button>
-          <button class="q-btn" data-q="why"><span class="kw">SELECT</span> reason <span class="kw">FROM</span> hire_me;</button>
-          <p class="qhint">// each query returns rows from the same source<br>// data: my actual track record</p>
-        </div>
-        <div class="play-out">
-          <div class="po-bar mono"><span id="po-name">impact</span><span id="po-meta">- rows: 4 · 0.012s</span></div>
-          <div class="po-body" id="po-body"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ROLE FIT / SCHEMA MAPPER -->
-<section id="fit">
-  <div class="wrap">
-    <div class="sec-head rev">
-      <span class="sec-tag">03 - SCHEMA MAPPER</span>
-      <h2 class="sec-title">What I bring, mapped to what the work needs.</h2>
-      <p class="sec-sub">A good analyst maps source fields to a target schema. Here's me mapping my core capabilities behind any data role - the requirement on the left, my proof on the right.</p>
-    </div>
-    <div class="fit-tabs rev">
-      <button class="fit-tab active" data-f="analytics">Analytics &amp; Reporting</button>
-      <button class="fit-tab" data-f="engineering">Data Engineering &amp; Quality</button>
-      <button class="fit-tab" data-f="ml">Machine Learning</button>
-      <button class="fit-tab" data-f="domain">Stakeholders &amp; Domains</button>
-    </div>
-    <div class="fit-panel rev" id="fit-panel"></div>
-  </div>
-</section>
-
-<!-- SKILLS -->
+<!-- SKILLS OS -->
 <section id="skills">
   <div class="wrap">
     <div class="sec-head rev">
-      <span class="sec-tag">04 - STACK</span>
-      <h2 class="sec-title">The toolset behind the pipelines.</h2>
+      <span class="sec-tag">06 · SKILLS OS</span>
+      <h2 class="sec-title">The operating stack behind the systems.</h2>
+      <p class="sec-sub">Grouped by function. Chips marked with a dot carry proof - click them to see exactly where I used the skill and what it produced.</p>
     </div>
-    <div class="matrix">
-      <div class="mcol rev"><h4><span class="sq"></span>LANGUAGES & ENGINEERING</h4><div class="chips">
-        <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Java</span><span class="chip">PySpark</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">ETL Pipelines</span><span class="chip">Data Quality</span><span class="chip">Parquet</span><span class="chip">SDLC</span>
-      </div></div>
-      <div class="mcol rev"><h4><span class="sq"></span>DATABASES & QUERYING</h4><div class="chips">
-        <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Cassandra</span><span class="chip">Athena</span><span class="chip">CTEs</span><span class="chip">Window Functions</span><span class="chip">Query Optimisation</span><span class="chip">Schema Design</span>
-      </div></div>
-      <div class="mcol rev"><h4><span class="sq"></span>CLOUD & PLATFORMS</h4><div class="chips">
-        <span class="chip">AWS S3</span><span class="chip">Glue</span><span class="chip">Athena</span><span class="chip">QuickSight</span><span class="chip">IAM</span><span class="chip">Azure</span><span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Serverless</span>
-      </div></div>
-      <div class="mcol rev"><h4><span class="sq"></span>BI, AI & ML</h4><div class="chips">
-        <span class="chip">Power BI</span><span class="chip">QuickSight</span><span class="chip">KPI Reporting</span><span class="chip">scikit-learn</span><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">LSTM</span><span class="chip">Ensemble Models</span><span class="chip">Classification</span>
-      </div></div>
-    </div>
+    <div class="os-grid rev" id="osGrid"></div>
+    <div class="skill-proof" id="skillProof" aria-live="polite"></div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
+<!-- EVIDENCE DASHBOARD -->
+<section id="evidence">
   <div class="wrap">
     <div class="sec-head rev">
-      <span class="sec-tag">05 - BUILDS</span>
-      <h2 class="sec-title">Things I built end-to-end.</h2>
+      <span class="sec-tag">07 · EVIDENCE DASHBOARD</span>
+      <h2 class="sec-title">Measurable, not adjectival.</h2>
+      <p class="sec-sub">The numbers behind the work, in one panel.</p>
     </div>
-    <div class="proj-grid">
-      <div class="proj rev">
-        <span class="proj-tag">LLM · DECISION SUPPORT</span>
-        <h4>DecisionForge</h4>
-        <p>An LLM decision-support agent (OpenAI Responses API) comparing postgrad programmes, cities and offers across cost, employability and lifestyle. Grounded in a vector store of 5 curated files, with 3 tool-calling functions for live currency, weather and World Bank data.</p>
-        <div class="pstack"><span>OpenAI API</span><span>Vector Store</span><span>Tool Calling</span><span>Sensitivity Analysis</span></div>
-      </div>
-      <div class="proj rev">
-        <span class="proj-tag">CLOUD · ETL</span>
-        <h4>Cloud Healthcare Analytics Pipeline</h4>
-        <p>A serverless AWS pipeline ingesting, cleaning and analysing healthcare data with S3, Glue (PySpark), Athena and QuickSight. Schema standardisation, numeric casting, partitioned Parquet storage, and Athena-validated curated data feeding an interactive dashboard.</p>
-        <div class="pstack"><span>AWS Glue</span><span>PySpark</span><span>Athena</span><span>QuickSight</span><span>Parquet</span></div>
-      </div>
-      <div class="proj rev">
-        <span class="proj-tag">DEEP LEARNING · AUDIO</span>
-        <h4>Speech Emotion Recognition</h4>
-        <p>An LSTM model classifying speech across 7 emotion classes from MFCC features (TESS dataset). Evolutionary adversarial data augmentation expanded training data 3× and lifted performance by 19% - directly relevant to anti-spoofing and synthetic-data work.</p>
-        <div class="pstack"><span>LSTM</span><span>MFCC</span><span>Adversarial Augmentation</span><span>TensorFlow</span></div>
-      </div>
-      <div class="proj rev">
-        <span class="proj-tag">RESEARCH · IEEE</span>
-        <h4>Gold Price Forecasting</h4>
-        <p>Published IEEE research: "Forecasting Gold Price using an Ensemble-Based Machine Learning Approach." A financial-time-series problem solved with ensemble methods - bridging quantitative modelling and investment-domain data.</p>
-        <div class="pstack"><span>Ensemble ML</span><span>Time Series</span><span>Finance</span><span>IEEE Published</span></div>
-      </div>
-    </div>
+    <div class="ev-grid rev" id="evGrid"></div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="status-line mono rev"><span class="dot"></span>STATUS: open to data analyst roles · Dublin / remote</div>
-    <h2 class="rev">Let's build the <span class="grad">next pipeline</span> together.</h2>
-    <p class="rev">If your team needs someone who can take messy data and ship something trustworthy, I'd love to talk. MSc Computer Science at UCD · GPA 3.85/4.20.</p>
+    <div class="status-line mono rev"><span class="dot"></span>STATUS: open to Data, AI, ML &amp; Analytics roles in Ireland · from September</div>
+    <h2 class="rev">Let's build the <span class="grad">next decision system</span> together.</h2>
+    <p class="rev">If your team is building reliable data systems, practical AI prototypes, or ML-powered products, I'd be happy to talk. MSc Computer Science at UCD · GPA 3.85/4.20 · Dublin, Ireland.</p>
     <div class="contact-row rev">
       <a href="mailto:rutujamahajan32@gmail.com" class="btn primary">✉ rutujamahajan32@gmail.com</a>
+      <a href="tel:+353899445348" class="btn">☎ +353 89 944 5348</a>
       <a href="https://linkedin.com/in/rutujamahajan/" target="_blank" rel="noopener" class="btn ghost">in / linkedin</a>
       <a href="https://github.com/rutujamahajan253" target="_blank" rel="noopener" class="btn ghost">⌥ github</a>
     </div>
@@ -449,177 +602,445 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
 </section>
 
 <footer>
-  <div class="status-line mono"><span class="dot"></span>pipeline healthy · last build: 2026</div><br>
-  designed &amp; built as a living data pipeline · Rutuja Yogesh Mahajan · rutujamahajan32@gmail.com
+  <div class="status-line mono"><span class="dot"></span>control room healthy · last build 2026</div><br>
+  Rutuja Yogesh Mahajan · Dublin, Ireland · rutujamahajan32@gmail.com · designed &amp; built as a living decision-intelligence control room
 </footer>
 
+<!-- MODAL (project + briefing) -->
+<div class="modal-bg" id="modalBg" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-head">
+      <span class="mtag" id="modalTag"></span>
+      <h3 id="modalTitle"></h3>
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    </div>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
 <script>
-/* ---------- nav ---------- */
+/* ===== nav ===== */
 const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
 const burger=document.getElementById('burger'),links=document.getElementById('links');
-burger.onclick=()=>links.classList.toggle('open');
-links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
+burger.onclick=()=>{const o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o)};
+links.querySelectorAll('a').forEach(a=>a.onclick=()=>{links.classList.remove('open');burger.setAttribute('aria-expanded',false)});
 
-/* ---------- reveal on scroll ---------- */
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.14});
+/* ===== recruiter mode ===== */
+const modeToggle=document.getElementById('modeToggle');
+modeToggle.onclick=()=>{
+  const on=document.body.classList.toggle('recruiter');
+  modeToggle.classList.toggle('on',on);
+  modeToggle.setAttribute('aria-pressed',on);
+};
+
+/* ===== reveal ===== */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rev,.stage').forEach(el=>io.observe(el));
 
-/* ---------- hero terminal typing ---------- */
+/* ===== count up ===== */
+const counted=new Set();
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting&&!counted.has(e.target)){counted.add(e.target);countUp(e.target)}
+}),{threshold:.5});
+document.querySelectorAll('.mm .num').forEach(n=>cio.observe(n));
+function countUp(el){
+  const t=+el.dataset.target,pre=el.dataset.prefix||'',suf=el.dataset.suffix||'';
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){el.textContent=pre+t+suf;return;}
+  let c=0,step=Math.max(1,Math.ceil(t/28));
+  const tick=()=>{c+=step;if(c>=t)c=t;el.textContent=pre+c+suf;if(c<t)requestAnimationFrame(tick)};
+  tick();
+}
+
+/* ===== hero terminal ===== */
 const heroLines=[
- {t:"<span class='t-prompt'>analyst@pipeline</span>:~$ <span class='t-out'>whoami</span>"},
- {t:"<span class='t-out'>Rutuja Mahajan - Data Analyst · 2+ yrs</span>"},
- {t:""},
- {t:"<span class='t-prompt'>analyst@pipeline</span>:~$ <span class='t-out'>run pipeline --career</span>"},
- {t:"<span class='t-com'>[extract]  </span><span class='t-out'>9 source formats → 1 master dataset</span>"},
- {t:"<span class='t-com'>[transform]</span><span class='t-out'> manual analysis → Python ETL</span>"},
- {t:"<span class='t-com'>[validate] </span><span class='t-out'>data-quality checks: </span><span class='t-num'>PASS</span>"},
- {t:"<span class='t-com'>[report]   </span><span class='t-out'>8 Power BI dashboards shipped</span>"},
- {t:""},
- {t:"<span class='t-prompt'>analyst@pipeline</span>:~$ <span class='t-out'>echo $IMPACT</span>"},
- {t:"<span class='t-kw'>~2 analyst-days/week saved · €12k cost avoided</span>"},
- {t:"<span class='t-prompt'>analyst@pipeline</span>:~$ <span class='cursor'></span>"}
+ "<span class='t-prompt'>control@room</span>:~$ <span class='t-out'>whoami</span>",
+ "<span class='t-out'>Rutuja Mahajan - Data · AI · ML</span>",
+ "",
+ "<span class='t-prompt'>control@room</span>:~$ <span class='t-out'>status --systems</span>",
+ "<span class='t-com'>[data]  </span><span class='t-out'>9 sources → 1 master set</span> <span class='t-num'>OK</span>",
+ "<span class='t-com'>[ml]    </span><span class='t-out'>LSTM · sentiment · ensembles</span> <span class='t-num'>OK</span>",
+ "<span class='t-com'>[llm]   </span><span class='t-out'>RAG + tool calling agent</span> <span class='t-num'>OK</span>",
+ "<span class='t-com'>[cloud] </span><span class='t-out'>S3·Glue·Athena·QuickSight</span> <span class='t-num'>OK</span>",
+ "",
+ "<span class='t-prompt'>control@room</span>:~$ <span class='t-out'>echo $AVAILABILITY</span>",
+ "<span class='t-kw'>open · Ireland · from September</span>",
+ "<span class='t-prompt'>control@room</span>:~$ <span class='cursor'></span>"
 ];
-const out=document.getElementById('hero-out');
-let li=0,ci=0,cur="";
+const out=document.getElementById('hero-out');let li=0;
 function type(){
   if(li>=heroLines.length)return;
-  const raw=heroLines[li].t;
-  // type plain (strip tags for char count but render full at end of line)
-  if(raw===""){const d=document.createElement('div');d.className='t-line';d.innerHTML='&nbsp;';out.appendChild(d);li++;ci=0;setTimeout(type,90);return;}
-  // render progressively by revealing characters of the *text*, but keep html - simplest: reveal full line with small delay sequence
-  const d=document.getElementById('cl')||(()=>{const x=document.createElement('div');x.className='t-line';x.id='cl';out.appendChild(x);return x;})();
-  d.innerHTML=raw;d.removeAttribute('id');li++;
+  const raw=heroLines[li];
+  const d=document.createElement('div');d.className='t-line';
+  d.innerHTML=raw===""?'&nbsp;':raw;out.appendChild(d);li++;
   out.scrollTop=out.scrollHeight;
-  setTimeout(type, raw.includes('cursor')?0:140+Math.random()*90);
+  setTimeout(type, raw.includes('cursor')?0:(raw===""?80:150+Math.random()*90));
 }
-setTimeout(type,500);
+setTimeout(type,450);
 
-/* ---------- query playground ---------- */
+/* ===== query console ===== */
 const QDATA={
- impact:{meta:'rows: 5 · 0.012s',rows:[
-   ['time_saved','~2 analyst-days / week (Airtel ETL automation)'],
-   ['turnaround','-20% weekly analysis time'],
-   ['cost_avoided','~€12,000 across client engagements'],
-   ['dashboards','8 standardised across 5 client accounts'],
-   ['testing_effort','-30% manual effort via UFT automation']
- ]},
- stack:{meta:'rows: 6 · 0.008s',rows:[
-   ['languages','Python · SQL · Java'],
-   ['engineering','ETL · PySpark · Pandas · Parquet · Data Quality'],
-   ['databases','PostgreSQL · MySQL · MongoDB · Cassandra · Athena'],
-   ['cloud','AWS (S3, Glue, Athena, QuickSight, IAM) · Azure · Docker'],
-   ['bi','Power BI · QuickSight · KPI Reporting'],
-   ['ml','scikit-learn · TensorFlow · Keras · LSTM · Ensembles']
- ]},
- etl:{meta:'rows: 4 · 0.015s',rows:[
-   ['airtel','manual threat analysis → Python ETL, validated across client envs'],
-   ['healthbeacon','9 manufacturer flat-files → 1 standardised master dataset'],
-   ['aws_project','serverless Glue/PySpark ETL → partitioned Parquet, Athena-validated'],
-   ['quality','order-to-dispense ratios · missing-ID checks · exception handling']
- ]},
- domains:{meta:'rows: 4 · 0.010s',rows:[
-   ['healthcare','medication risk-management, dispense reconciliation, EHR-style data'],
-   ['cybersecurity','threat intelligence, brand-impersonation takedowns'],
-   ['finance','IEEE gold-price forecasting, ensemble time-series modelling'],
-   ['enterprise','SAP test automation at Colgate GBS']
- ]},
- edu:{meta:'rows: 3 · 0.007s',rows:[
-   ['msc','Computer Science (Negotiated Learning) · UCD · GPA 3.85/4.20 · 2025–26'],
-   ['btech','Computer Engineering · MIT Academy Pune · CGPA 9.57/10'],
-   ['modules','Data Science in Python · Cloud Computing · Distributed Systems']
- ]},
- why:{meta:'rows: 4 · 0.011s',rows:[
-   ['reliability','I build systems people can trust - quality checks baked in'],
-   ['automation','I find the manual work and make it disappear'],
-   ['translation','I turn complex results into plain language for stakeholders'],
-   ['range','healthcare · security · finance · ML - I learn the domain fast']
- ]}
+ ai:{name:'can_build_ai_systems',v:'YES',ans:"Yes - I've shipped a working LLM agent end to end, not just API calls.",ev:[
+   "<b>DecisionForge</b>: LLM decision-support agent on the OpenAI Responses API",
+   "RAG with <b>vector-store grounding</b> over 5 curated files + file search",
+   "<b>3 tool-calling functions</b> for live currency, weather and economic data",
+   "Prompt engineering + prompt evaluation across cost / employability / lifestyle"]},
+ messy:{name:'handles_messy_data',v:'STRONG',ans:"This is my core strength - unifying inconsistent real-world data into trustworthy datasets.",ev:[
+   "<b>9 manufacturer flat-files</b>, mismatched formats → one standardised master set",
+   "Data-quality checks: order-to-dispense ratios, missing IDs, exception handling",
+   "Python ETL replacing manual threat analysis - <b>2 analyst-days/week</b> saved",
+   "Schema standardisation, numeric casting, partitioned Parquet on AWS"]},
+ ml:{name:'builds_ml_models',v:'YES',ans:"Yes - deep learning, classical ML, and evaluation, with a published research paper.",ev:[
+   "<b>LSTM</b> speech-emotion model across 7 classes (TensorFlow / Keras, MFCC)",
+   "Evolutionary adversarial augmentation: <b>3× data</b>, <b>+19%</b> performance",
+   "Sentiment-analysis models on patient-care interactions at HealthBeacon",
+   "<b>IEEE paper</b>: ensemble-based gold-price forecasting (time series)"]},
+ health:{name:'healthcare_domain',v:'YES',ans:"Currently working in healthcare data daily, with safety-relevant validation logic.",ev:[
+   "Reconciliation pipeline for a <b>UK medication risk-management</b> platform",
+   "Compliance-gap flagging across <b>patient risk categories</b>",
+   "Cloud healthcare analytics pipeline (S3 → Glue → Athena → QuickSight)",
+   "Sentiment analysis on patient-care interaction data"]},
+ comms:{name:'stakeholder_communication',v:'STRONG',ans:"Yes - I translate technical output into decisions non-technical teams act on.",ev:[
+   "<b>8 dashboards</b> standardised across <b>5 client accounts</b>, retiring ad-hoc decks",
+   "Reusable KPI definitions that cut repeated alignment friction",
+   "Trained <b>3 new analysts</b>; recognised with Execution Excellence",
+   "Plain-language reporting feeding real operational decisions"]},
+ aieng:{name:'fit_ai_engineer',v:'GOOD FIT',ans:"Good early-career fit - applied LLM, RAG, tool calling, plus the data engineering AI products need.",ev:[
+   "DecisionForge proves end-to-end <b>RAG + tool-calling</b> design",
+   "Python ETL + cloud (S3, Glue, Athena) for the data layer behind AI",
+   "Prompt engineering &amp; evaluation experience",
+   "Best proof → <b>DecisionForge</b>"]},
+ ds:{name:'fit_data_scientist',v:'GOOD FIT',ans:"Good fit - modelling, evaluation, and the ability to turn analysis into decisions.",ev:[
+   "LSTM, ensembles, sentiment models, with measured improvement",
+   "Strong SQL + Python (Pandas, NumPy) for analysis",
+   "IEEE-published research communication",
+   "Best proof → <b>Speech Emotion Recognition</b> + <b>Gold Price Forecasting</b>"]},
+ da:{name:'fit_data_analyst',v:'STRONG FIT',ans:"Strong, proven fit - this is where my measurable track record is deepest.",ev:[
+   "15+ optimised SQL queries; 8 Power BI dashboards across 5 accounts",
+   "20% faster turnaround; ~2 analyst-days/week saved",
+   "Data quality + KPI reporting in a live healthcare role now",
+   "Best proof → <b>Airtel</b> + <b>HealthBeacon</b>"]},
+ mle:{name:'fit_ml_engineer',v:'EMERGING FIT',ans:"Emerging fit - model building plus the pipeline, cloud and CI skills MLE needs.",ev:[
+   "Model training/eval (LSTM, ensembles) + augmentation",
+   "PySpark, Parquet, serverless AWS, Docker, CI/CD exposure",
+   "Production-style workflows: version control, automation, validation",
+   "Best proof → <b>Cloud Healthcare Pipeline</b> + <b>Speech Emotion Recognition</b>"]}
 };
-const poBody=document.getElementById('po-body'),poName=document.getElementById('po-name'),poMeta=document.getElementById('po-meta');
-function renderQ(key){
-  const d=QDATA[key];poName.textContent=key;poMeta.textContent='- '+d.meta;
-  poBody.innerHTML='';
-  d.rows.forEach((r,i)=>{
-    const row=document.createElement('div');row.className='rowline';
-    row.innerHTML=`<span class="k">${r[0]}</span><span class="v">${r[1]}</span>`;
-    row.style.opacity=0;row.style.transform='translateX(-6px)';row.style.transition='.3s';
-    poBody.appendChild(row);
-    setTimeout(()=>{row.style.opacity=1;row.style.transform='none'},60*i+40);
-  });
+const cqBody=document.getElementById('cqBody'),cqName=document.getElementById('cqName'),cqVerdict=document.getElementById('cqVerdict');
+function renderQ(k){
+  const d=QDATA[k];cqName.textContent=d.name;cqVerdict.textContent='● '+d.v;
+  cqBody.innerHTML=`<div class="ans">${d.ans}</div><ul class="cq-ev">${d.ev.map(e=>`<li>${e}</li>`).join('')}</ul>`;
+  const lis=cqBody.querySelectorAll('.cq-ev li');
+  lis.forEach((l,i)=>{l.style.opacity=0;l.style.transform='translateX(-6px)';l.style.transition='.3s';setTimeout(()=>{l.style.opacity=1;l.style.transform='none'},60*i+50)});
 }
 document.querySelectorAll('.q-btn').forEach(b=>b.onclick=()=>{
   document.querySelectorAll('.q-btn').forEach(x=>x.classList.remove('active'));
   b.classList.add('active');renderQ(b.dataset.q);
 });
-renderQ('impact');
+renderQ('ai');
 
-/* ---------- schema mapper ---------- */
+/* ===== role decoder ===== */
 const FITS={
- analytics:{role:'Analytics & Reporting',score:'core strength',co:'// SQL · BI dashboards · KPI definition · self-serve reporting',rows:[
-   ['Strong SQL across complex queries','15+ optimised SQL queries - CTEs, window functions, query tuning'],
-   ['BI dashboards stakeholders rely on','8 Power BI dashboards, standardised across 5 client accounts'],
-   ['Define and align metrics','Reusable KPI definitions that cut repeated alignment issues between teams'],
-   ['Make data self-serve','Power BI data models that improved data access for non-technical stakeholders'],
-   ['Turn analysis into decisions','Sentiment + scoring analysis feeding real operational decisions']
- ]},
- engineering:{role:'Data Engineering & Quality',score:'core strength',co:'// ETL · pipelines · validation · cloud · automation',rows:[
-   ['Build reliable ETL pipelines','Python ETL replacing manual analysis - saved ~2 analyst-days/week'],
-   ['Unify messy multi-source data','9 manufacturer flat-files → 1 standardised master dataset'],
-   ['Bake in data-quality checks','Monitoring on order-to-dispense ratios, missing IDs, exception cases'],
-   ['Work cloud-native','Serverless AWS: S3, Glue (PySpark), Athena, partitioned Parquet'],
-   ['Automate the manual work','Cut weekly turnaround 20%; 30% less manual testing via automation']
- ]},
- ml:{role:'Machine Learning',score:'applied experience',co:'// modelling · deep learning · augmentation · research',rows:[
-   ['Train deep-learning models','LSTM speech-emotion model across 7 classes (TensorFlow / Keras)'],
-   ['Improve models with augmentation','Evolutionary adversarial augmentation - 3× data, +19% performance'],
-   ['Apply ensemble & classical ML','scikit-learn - regression, classification, ensemble methods'],
-   ['Ground LLMs in real data','DecisionForge: vector-store retrieval + tool-calling agent'],
-   ['Published research','IEEE paper - ensemble-based gold-price forecasting']
- ]},
- domain:{role:'Stakeholders & Domains',score:'adaptable',co:'// communication · cross-domain · fast ramp-up',rows:[
-   ['Translate complex results plainly','Turned technical output into plain language for business stakeholders'],
-   ['Work across industries','Healthcare, cybersecurity, finance, and enterprise (SAP) data'],
-   ['Collaborate with non-technical teams','Standardised reporting across 5 client accounts, retiring ad-hoc decks'],
-   ['Learn new domains fast','Ramped into threat intel, then healthcare reconciliation, then LLMs'],
-   ['Recognised for delivery','Execution Excellence award at Airtel for team contribution']
- ]}
+ aieng:{role:'AI Engineer',score:'● good early-career fit',co:'// LLM apps · RAG · tool calling · the data layer behind AI',
+   need:['Build LLM-powered features &amp; agents','Ground models in real data (RAG)','Call external tools / APIs reliably','Engineer &amp; evaluate prompts','Stand up the data pipeline behind it'],
+   have:['<b>DecisionForge</b> - LLM agent on OpenAI Responses API','Vector-store + file-search RAG over curated sources','<b>3 tool-calling functions</b>: currency, weather, economic data','Prompt engineering + structured prompt evaluation','Python ETL + AWS (S3, Glue, Athena) for the data layer'],
+   proof:'DecisionForge - RAG + tool-calling decision-support agent',
+   kw:['OpenAI Responses API','RAG','Vector Stores','Tool Calling','Prompt Eval','Python','AWS']},
+ mle:{role:'Machine Learning Engineer',score:'● emerging fit',co:'// models + pipelines + cloud + delivery discipline',
+   need:['Train &amp; evaluate models','Build data pipelines feeding models','Work cloud-native &amp; containerised','Use version control + CI/CD','Improve models systematically'],
+   have:['LSTM, ensembles, sentiment models with measured gains','PySpark + Parquet ETL; serverless AWS pipelines','Docker + CI/CD exposure; AWS Glue/Athena','Git, GitHub, BitBucket in real projects','Adversarial augmentation → <b>+19%</b> performance'],
+   proof:'Cloud Healthcare Pipeline + Speech Emotion Recognition',
+   kw:['TensorFlow','Keras','PyTorch','PySpark','Parquet','Docker','CI/CD','AWS Glue']},
+ ds:{role:'Data Scientist',score:'● good fit',co:'// modelling · evaluation · analysis · research communication',
+   need:['Frame problems &amp; build models','Strong statistical / ML toolkit','Evaluate &amp; improve performance','Communicate findings clearly','Work across messy real data'],
+   have:['LSTM, ensemble ML, classification &amp; regression','scikit-learn, TensorFlow, Pandas, NumPy','<b>+19%</b> via augmentation; rigorous eval','<b>IEEE-published</b> research paper','9-source data unification + quality checks'],
+   proof:'Speech Emotion Recognition + Gold Price Forecasting (IEEE)',
+   kw:['scikit-learn','LSTM','Ensembles','Pandas','Time Series','Model Eval','SQL']},
+ nlp:{role:'NLP Data Scientist',score:'● applied experience',co:'// text + sentiment + LLM grounding',
+   need:['Work with text / language data','Build sentiment / classification models','Apply LLMs to language tasks','Evaluate model quality','Ground outputs in real sources'],
+   have:['Sentiment-analysis models on patient-care interactions','Speech / audio modelling (MFCC + LSTM)','LLM RAG agent grounded in a vector store','UCD module: <b>Generative AI: Language Models</b>','Prompt evaluation across multiple criteria'],
+   proof:'HealthBeacon sentiment models + DecisionForge',
+   kw:['Sentiment Analysis','LSTM','RAG','Vector Stores','OpenAI API','Prompt Eval']},
+ da:{role:'Data Analyst',score:'● strong, proven fit',co:'// SQL · BI dashboards · KPI · self-serve reporting',
+   need:['Strong SQL across complex queries','Dashboards stakeholders rely on','Define &amp; align metrics','Make data self-serve','Turn analysis into decisions'],
+   have:['<b>15+</b> optimised SQL queries - CTEs, window functions','<b>8</b> Power BI dashboards across <b>5</b> client accounts','Reusable KPI definitions cutting alignment friction','Power BI data models for non-technical users','Sentiment + scoring feeding operational decisions'],
+   proof:'Airtel operational analytics + HealthBeacon reporting',
+   kw:['SQL','Power BI','QuickSight','Tableau','KPI Design','CTEs','Window Functions']},
+ ae:{role:'Analytics Engineer',score:'● strong fit',co:'// the bridge between raw data and clean analytics',
+   need:['Model &amp; transform data for analytics','Enforce data quality','Standardise schemas','Serve clean data to BI','Automate transformation'],
+   have:['Standardised 9 sources into one master dataset','Quality checks: ratios, missing IDs, exceptions','Schema standardisation, casting, partitioned Parquet','Athena-validated curated data → QuickSight','Python ETL replacing manual work'],
+   proof:'Cloud Healthcare Pipeline + HealthBeacon reconciliation',
+   kw:['ETL','Data Quality','Schema Design','Parquet','Athena','PySpark','SQL']},
+ de:{role:'Data Engineer',score:'● emerging fit',co:'// ingestion · pipelines · cloud · validation',
+   need:['Build robust ingestion pipelines','Handle multi-source, multi-format data','Cloud &amp; distributed processing','Validation &amp; monitoring','Reliable, repeatable jobs'],
+   have:['Ingestion jobs for 9 mismatched flat-file sources','Serverless AWS: S3, Glue (PySpark), Athena, EventBridge','Partitioned Parquet storage; distributed-systems coursework','Data-quality monitoring baked into pipelines','Versioned, automated, repeatable ETL'],
+   proof:'Cloud Healthcare Pipeline + HealthBeacon ingestion',
+   kw:['Python','PySpark','AWS S3/Glue','Athena','Parquet','EventBridge','ETL']}
 };
-const fitPanel=document.getElementById('fit-panel');
-function renderFit(key){
-  const f=FITS[key];
+const fitPanel=document.getElementById('fitPanel');
+function renderFit(k){
+  const f=FITS[k];
   fitPanel.innerHTML=`
-    <div class="fit-head"><div class="fit-role">${f.role}</div><div class="fit-score mono">● ${f.score}</div></div>
+    <div class="fit-head"><div class="fit-role">${f.role}</div><div class="fit-score mono">${f.score}</div></div>
     <div class="fit-co">${f.co}</div>
-    ${f.rows.map(r=>`<div class="maprow"><div class="need">${r[0]}</div><div class="arrow mono">→ maps to →</div><div class="have">${r[1].replace(/(\d[\d.]*[%×x]?|~?€[\d,]+|\d+ analyst-days?\/week)/g,'<b>$1</b>')}</div></div>`).join('')}
-  `;
-  const rows=fitPanel.querySelectorAll('.maprow');
-  rows.forEach((r,i)=>{r.style.opacity=0;r.style.transform='translateY(8px)';r.style.transition='.4s';setTimeout(()=>{r.style.opacity=1;r.style.transform='none'},70*i+50)});
+    <div class="fit-cols">
+      <div class="need-col"><h5>What the role needs</h5><ul>${f.need.map(n=>`<li>${n}</li>`).join('')}</ul></div>
+      <div class="have-col"><h5>My evidence</h5><ul>${f.have.map(h=>`<li>${h}</li>`).join('')}</ul></div>
+    </div>
+    <div class="fit-proof"><b>Best proof</b>${f.proof}</div>
+    <div class="fit-kw">${f.kw.map(x=>`<span class="kw">${x}</span>`).join('')}</div>`;
 }
 document.querySelectorAll('.fit-tab').forEach(t=>t.onclick=()=>{
-  document.querySelectorAll('.fit-tab').forEach(x=>x.classList.remove('active'));
-  t.classList.add('active');renderFit(t.dataset.f);
+  document.querySelectorAll('.fit-tab').forEach(x=>{x.classList.remove('active');x.setAttribute('aria-selected','false')});
+  t.classList.add('active');t.setAttribute('aria-selected','true');renderFit(t.dataset.f);
 });
-renderFit('analytics');
+renderFit('aieng');
 
-/* ---------- flowing particle field (data flowing through pipeline) ---------- */
+/* ===== system map ===== */
+const NODES=[
+ {id:'ingest',label:'Ingestion',x:40,y:30,cat:'DATA SYSTEMS',desc:'Reading and consolidating data from many inconsistent sources.',exp:'9 manufacturer flat-files → one master dataset (HealthBeacon)',proj:'Cloud Healthcare Pipeline',tools:'Python · S3 · Glue',metric:'9 sources unified'},
+ {id:'etl',label:'ETL / Transform',x:230,y:30,cat:'DATA SYSTEMS',desc:'Cleaning, transforming and validating data into usable shape.',exp:'Python ETL replacing manual analysis at Airtel',proj:'Airtel automation · Cloud Pipeline',tools:'Python · PySpark · Pandas',metric:'~2 analyst-days/week saved'},
+ {id:'sql',label:'SQL / Query',x:420,y:30,cat:'DATA SYSTEMS',desc:'Complex querying and optimisation for analytics.',exp:'15+ SQL queries with CTEs &amp; window functions',proj:'Airtel operational analytics',tools:'PostgreSQL · MySQL · Athena',metric:'15+ optimised queries'},
+ {id:'quality',label:'Data Quality',x:40,y:120,cat:'DATA SYSTEMS',desc:'Checks and monitoring so curated data stays trustworthy.',exp:'Order-to-dispense ratios, missing IDs, exceptions',proj:'HealthBeacon reconciliation',tools:'Python · validation logic',metric:'review-ready datasets'},
+ {id:'cloud',label:'Cloud Analytics',x:230,y:120,cat:'CLOUD',desc:'Serverless cloud pipelines and warehousing.',exp:'S3 → Glue (PySpark) → Athena → QuickSight',proj:'Cloud Healthcare Pipeline',tools:'AWS · Parquet · IAM',metric:'serverless, partitioned'},
+ {id:'bi',label:'BI / Dashboards',x:420,y:120,cat:'CLOUD & BI',desc:'Dashboards and KPI reporting stakeholders rely on.',exp:'8 Power BI dashboards across 5 client accounts',proj:'Airtel · HealthBeacon',tools:'Power BI · QuickSight · Tableau',metric:'8 dashboards · 5 accounts'},
+ {id:'ml',label:'Machine Learning',x:40,y:210,cat:'MACHINE LEARNING',desc:'Training and evaluating predictive models.',exp:'LSTM, ensembles, classification &amp; regression',proj:'Speech Emotion · Gold Forecasting',tools:'TensorFlow · Keras · scikit-learn',metric:'+19% with augmentation'},
+ {id:'nlp',label:'NLP / Sentiment',x:230,y:210,cat:'MACHINE LEARNING',desc:'Language and sentiment modelling on real interactions.',exp:'Sentiment models on patient-care interactions',proj:'HealthBeacon',tools:'Python · NLP',metric:'live healthcare signals'},
+ {id:'llm',label:'LLM / RAG',x:420,y:210,cat:'AI / LLM',desc:'Retrieval-augmented LLM systems grounded in real data.',exp:'Vector-store RAG + file search agent',proj:'DecisionForge',tools:'OpenAI API · Vector Stores',metric:'grounded responses'},
+ {id:'tools',label:'Tool Calling',x:135,y:300,cat:'AI / LLM',desc:'LLMs that call external functions for live data.',exp:'3 tool-calling functions (currency, weather, economic)',proj:'DecisionForge',tools:'OpenAI Responses API',metric:'3 live tools'},
+ {id:'decision',label:'Decision Support',x:325,y:300,cat:'OUTPUT',desc:'Turning models and data into ranked, explainable choices.',exp:'Compared programmes/cities/offers on multiple criteria',proj:'DecisionForge',tools:'RAG · sensitivity analysis',metric:'decision-ready'},
+ {id:'comms',label:'Stakeholder Comms',x:225,y:380,cat:'OUTPUT',desc:'Translating technical output into decisions teams act on.',exp:'Standardised reporting; trained 3 analysts',proj:'Airtel · HealthBeacon',tools:'Power BI · plain language',metric:'5 client accounts aligned'}
+];
+const EDGES=[['ingest','etl'],['etl','sql'],['etl','quality'],['sql','bi'],['quality','cloud'],['cloud','bi'],['quality','ml'],['ml','nlp'],['nlp','llm'],['ml','tools'],['llm','tools'],['llm','decision'],['tools','decision'],['bi','comms'],['decision','comms'],['ml','decision']];
+const NW=128,NH=40;
+const nodesG=document.getElementById('nodes'),edgesG=document.getElementById('edges'),mapDetail=document.getElementById('mapDetail');
+function center(n){return{x:n.x+NW/2,y:n.y+NH/2}}
+const byId=Object.fromEntries(NODES.map(n=>[n.id,n]));
+EDGES.forEach((e,i)=>{
+  const a=center(byId[e[0]]),b=center(byId[e[1]]);
+  const p=document.createElementNS('http://www.w3.org/2000/svg','path');
+  p.setAttribute('d',`M${a.x} ${a.y} C ${(a.x+b.x)/2} ${a.y}, ${(a.x+b.x)/2} ${b.y}, ${b.x} ${b.y}`);
+  p.setAttribute('class','edge'+(i%3===0?' flow':''));
+  edgesG.appendChild(p);
+});
+NODES.forEach(n=>{
+  const g=document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.setAttribute('class','node');g.setAttribute('tabindex','0');g.setAttribute('role','button');
+  g.setAttribute('aria-label',n.label+' capability');
+  g.innerHTML=`<rect x="${n.x}" y="${n.y}" width="${NW}" height="${NH}" rx="9"></rect><text x="${n.x+NW/2}" y="${n.y+NH/2+3.5}" text-anchor="middle">${n.label}</text>`;
+  const sel=()=>{document.querySelectorAll('.node').forEach(x=>x.classList.remove('sel'));g.classList.add('sel');showNode(n)};
+  g.onclick=sel;g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();sel()}};
+  nodesG.appendChild(g);
+});
+function showNode(n){
+  mapDetail.innerHTML=`
+    <div class="md-name">${n.label}</div>
+    <div class="md-cat mono">${n.cat}</div>
+    <div class="md-desc">${n.desc}</div>
+    <div class="md-row"><span class="lab">experience</span><span class="val">${n.exp}</span></div>
+    <div class="md-row"><span class="lab">project</span><span class="val">${n.proj}</span></div>
+    <div class="md-row"><span class="lab">tools</span><span class="val">${n.tools}</span></div>
+    <div class="md-metric">${n.metric}</div>`;
+}
+showNode(NODES[8]); // default: LLM/RAG
+document.querySelectorAll('.node')[8].classList.add('sel');
+
+/* ===== project lab ===== */
+const PROJECTS=[
+ {flag:true,tag:'AI / LLM FLAGSHIP',title:'DecisionForge',stack:['OpenAI Responses API','RAG','Vector Store','Tool Calling','Prompt Eval'],
+  teaser:'An LLM decision-support agent that compares postgrad programmes, cities and job offers across cost, employability, lifestyle and economic criteria.',
+  problem:'Big life decisions (where to study, which offer to take) involve scattered, fast-changing information across many dimensions - hard to weigh consistently.',
+  built:['LLM agent on the <b>OpenAI Responses API</b> with retrieval-augmented generation','<b>Vector-store grounding</b> over 5 curated files plus file search','<b>3 tool-calling functions</b> pulling live currency, weather and economic data','Prompt engineering + evaluation, with sensitivity analysis across criteria'],
+  matters:'Shows I can build a real applied-AI system end to end - grounding, tool use, evaluation - not just call an API once.',
+  signal:'Strongest evidence for AI Engineer / Applied AI / LLM roles: RAG + tool calling + prompt evaluation in one working agent.',
+  roles:'AI Engineer · Applied AI · NLP Data Scientist'},
+ {tag:'CLOUD · ETL',title:'Cloud Healthcare Data Analytics Pipeline',stack:['AWS Glue','PySpark','Athena','QuickSight','Parquet'],
+  teaser:'A serverless AWS pipeline that ingests, cleans, transforms and analyses healthcare data into an interactive dashboard.',
+  problem:'Raw healthcare data arrives messy and unqueryable; teams need clean, validated data they can explore.',
+  built:['Serverless ingestion &amp; transformation with <b>S3, Glue (PySpark), Athena</b>','Schema standardisation, numeric casting and derived fields','<b>Partitioned Parquet</b> storage; Athena-SQL validation of curated data','Interactive <b>QuickSight</b> dashboard on top'],
+  matters:'Demonstrates cloud-native data engineering and analytics-engineering discipline - the layer beneath every ML/BI product.',
+  signal:'Strong evidence for Data Engineer / Analytics Engineer roles: real serverless pipeline with validation and partitioning.',
+  roles:'Data Engineer · Analytics Engineer · ML Engineer'},
+ {tag:'DEEP LEARNING · AUDIO',title:'Speech Emotion Recognition',stack:['LSTM','MFCC','Adversarial Augmentation','TensorFlow','Keras'],
+  teaser:'An LSTM model classifying speech across 7 emotion classes, boosted by evolutionary adversarial data augmentation.',
+  problem:'Emotion datasets are small; models overfit and generalise poorly.',
+  built:['<b>LSTM</b> on MFCC features from the TESS dataset, 7 emotion classes','<b>Evolutionary adversarial augmentation</b> expanding training data 3×','Systematic evaluation showing a <b>19%</b> performance improvement'],
+  matters:'Shows deep-learning modelling, an understanding of data scarcity, and rigorous before/after evaluation.',
+  signal:'Evidence for Data Scientist / ML Engineer roles: model building, augmentation strategy, measured improvement.',
+  roles:'Data Scientist · ML Engineer'},
+ {tag:'RESEARCH · IEEE',title:'Gold Price Forecasting',stack:['Ensemble ML','Time Series','Finance','IEEE Published'],
+  teaser:'Published IEEE research: forecasting gold price with an ensemble-based machine-learning approach.',
+  problem:'Financial time series are noisy and hard to forecast with a single model.',
+  built:['Ensemble methods applied to a financial time-series forecasting problem','Comparative evaluation of approaches','Findings written up and <b>published with IEEE</b>'],
+  matters:'Shows quantitative modelling plus the ability to communicate research clearly and credibly.',
+  signal:'Evidence for Data Scientist / quantitative roles: ensemble ML, time series, peer-reviewed communication.',
+  roles:'Data Scientist · Quantitative Analytics'},
+ {tag:'HEALTHCARE · PIPELINE',title:'HealthBeacon Reconciliation Pipeline',stack:['Python','Power BI','Data Quality','Sentiment','BitBucket'],
+  teaser:'A live Python reconciliation pipeline matching manufacturer sales against dispense records to flag compliance gaps.',
+  problem:'Manufacturer sales and prescription dispense data live in incompatible formats, making compliance gaps invisible.',
+  built:['Ingestion of <b>9 manufacturer</b> flat-files into one standardised master dataset','Reconciliation matching sales vs dispense by <b>patient risk category</b>','Data-quality checks (ratios, missing IDs, exceptions)','Power BI KPI model + sentiment models on patient-care interactions'],
+  matters:'Current, real production-style work in a regulated healthcare domain - data quality with real stakes.',
+  signal:'Evidence for Data Analyst / Analytics Engineer roles in healthcare: validation, reconciliation, reporting.',
+  roles:'Data Analyst · Analytics Engineer · Healthcare Data'},
+ {tag:'SECURITY · AUTOMATION',title:'Airtel Threat Intelligence Automation',stack:['Python ETL','SQL','Power BI','Automation'],
+  teaser:'Python ETL and dashboards that replaced manual threat-intelligence analysis across multiple client accounts.',
+  problem:'Threat-intel reporting was manual, slow and inconsistent across clients.',
+  built:['Python ETL to clean, transform and validate threat data','<b>15+ SQL queries</b> replacing hand-built KPI reports','<b>8 Power BI dashboards</b> standardised across <b>5 client accounts</b>','Led 20+ brand-impersonation takedowns'],
+  matters:'Shows operational analytics at scale, automation mindset, and measurable business impact.',
+  signal:'Evidence for Data Analyst / Analytics Engineer roles: automation, SQL, BI, and ~€12k cost avoidance.',
+  roles:'Data Analyst · Analytics Engineer'}
+];
+const projGrid=document.getElementById('projGrid');
+PROJECTS.forEach((p,i)=>{
+  const d=document.createElement('div');d.className='proj'+(p.flag?' flagship':'');
+  d.setAttribute('tabindex','0');d.setAttribute('role','button');d.setAttribute('aria-label','Open case file: '+p.title);
+  d.innerHTML=`
+    <div class="proj-top"><span class="proj-tag">${p.tag}</span>${p.flag?'<span class="flag-badge">★ FLAGSHIP</span>':''}</div>
+    <h4>${p.title}</h4>
+    <p class="pteaser">${p.teaser}</p>
+    <div class="pstack">${p.stack.map(s=>`<span>${s}</span>`).join('')}</div>
+    <div class="expand-hint mono">↳ open case file</div>`;
+  const open=()=>openProject(p);
+  d.onclick=open;d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}};
+  projGrid.appendChild(d);
+});
+
+/* ===== modal ===== */
+const modalBg=document.getElementById('modalBg'),modalTag=document.getElementById('modalTag'),
+      modalTitle=document.getElementById('modalTitle'),modalContent=document.getElementById('modalContent'),
+      modalClose=document.getElementById('modalClose');
+let lastFocus=null;
+function openModal(){lastFocus=document.activeElement;modalBg.classList.add('open');modalClose.focus()}
+function closeModal(){modalBg.classList.remove('open');if(lastFocus)lastFocus.focus()}
+modalClose.onclick=closeModal;
+modalBg.onclick=e=>{if(e.target===modalBg)closeModal()};
+addEventListener('keydown',e=>{if(e.key==='Escape'&&modalBg.classList.contains('open'))closeModal()});
+function openProject(p){
+  modalTag.textContent=p.tag;modalTitle.textContent=p.title;
+  modalContent.innerHTML=`<div class="modal-body">
+    <div class="mblock"><h6>Problem</h6><p>${p.problem}</p></div>
+    <div class="mblock"><h6>System built</h6><ul>${p.built.map(b=>`<li>${b}</li>`).join('')}</ul></div>
+    <div class="mblock"><h6>Stack</h6><div class="pstack">${p.stack.map(s=>`<span>${s}</span>`).join('')}</div></div>
+    <div class="mblock"><h6>Why it matters</h6><p>${p.matters}</p></div>
+    <div class="mblock"><h6>Role relevance</h6><p>${p.roles}</p></div>
+    <div class="mblock signal-box"><h6>Recruiter signal</h6><p>${p.signal}</p></div>
+  </div>`;
+  openModal();
+}
+
+/* ===== briefing ===== */
+document.getElementById('briefBtn').onclick=()=>{
+  modalTag.textContent='AUTO-GENERATED · RECRUITER BRIEFING';
+  modalTitle.textContent='30-second briefing';
+  modalContent.innerHTML=`<div class="briefing-body">
+    <p><b>Rutuja Mahajan</b> is a Dublin-based MSc Computer Science candidate (UCD, GPA 3.85/4.20) working as a Data Analyst Intern at HealthBeacon, with prior experience across threat-intelligence automation and SAP test automation.</p>
+    <p style="margin-top:12px">She works across <b>Python ETL, SQL, cloud analytics (AWS), BI dashboards, machine learning, sentiment analysis, and LLM/RAG prototypes</b> - building reliable pipelines, evaluated models, and decision-ready outputs. Her flagship AI project, <b>DecisionForge</b>, is a RAG + tool-calling LLM agent; her data work has unified 9 messy sources, saved ~2 analyst-days/week, and standardised reporting across 5 client accounts.</p>
+    <p style="margin-top:12px">Best fit: <b>Data Analyst, Analytics Engineer, Data Scientist, AI Engineer</b> and graduate Data/AI/ML roles in Ireland, available from September.</p>
+    <div class="bf-metrics">
+      <span>9 sources unified</span><span>~2 days/wk saved</span><span>8 dashboards · 5 accounts</span>
+      <span>+19% ML perf</span><span>~€12k cost avoided</span><span>IEEE published</span>
+    </div>
+    <div class="copy-row">
+      <button class="btn primary small" id="copyBrief" type="button">⧉ copy briefing</button>
+      <a class="btn ghost small" href="mailto:rutujamahajan32@gmail.com">✉ contact</a>
+    </div>
+  </div>`;
+  openModal();
+  document.getElementById('copyBrief').onclick=function(){
+    const txt="Rutuja Mahajan - Dublin-based MSc Computer Science candidate (UCD, GPA 3.85/4.20), Data Analyst Intern at HealthBeacon. Works across Python ETL, SQL, cloud analytics (AWS), BI dashboards, machine learning, sentiment analysis, and LLM/RAG prototypes. Flagship: DecisionForge (RAG + tool-calling LLM agent). Impact: 9 sources unified, ~2 analyst-days/week saved, 8 dashboards across 5 client accounts, +19% ML performance, ~€12k cost avoided, IEEE published. Open to Data/AI/ML roles in Ireland from September. rutujamahajan32@gmail.com";
+    navigator.clipboard?.writeText(txt).then(()=>{this.textContent='✓ copied'},()=>{this.textContent='copy failed'});
+  };
+};
+
+/* ===== skills OS ===== */
+const PROOFS={
+ 'RAG':'DecisionForge - vector-store grounded LLM agent with file search.',
+ 'Vector Stores':'DecisionForge - retrieval grounding over 5 curated files.',
+ 'Tool Calling':'DecisionForge - 3 live functions: currency, weather, economic data.',
+ 'OpenAI Responses API':'DecisionForge - the LLM agent runtime.',
+ 'Prompt Evaluation':'DecisionForge - structured evaluation across decision criteria.',
+ 'LSTM':'Speech Emotion Recognition - 7-class model on MFCC features.',
+ 'Adversarial Augmentation':'Speech Emotion Recognition - 3× data, +19% performance.',
+ 'Ensemble Models':'Gold Price Forecasting - IEEE-published ensemble approach.',
+ 'Sentiment Analysis':'HealthBeacon - sentiment models on patient-care interactions.',
+ 'Power BI':'Airtel + HealthBeacon - 8 dashboards across 5 client accounts.',
+ 'AWS Glue':'Cloud Healthcare Pipeline - serverless PySpark transforms.',
+ 'PySpark':'Cloud Healthcare Pipeline - distributed transformation.',
+ 'Athena':'Cloud Healthcare Pipeline - SQL validation of curated data.',
+ 'Parquet':'Cloud Healthcare Pipeline - partitioned columnar storage.',
+ 'QuickSight':'Cloud Healthcare Pipeline - interactive dashboard layer.',
+ 'SQL':'Airtel - 15+ optimised queries (CTEs, window functions).',
+ 'ETL':'Airtel + HealthBeacon - Python pipelines replacing manual work.',
+ 'Data Quality':'HealthBeacon - ratio, missing-ID and exception checks.',
+ 'Python':'Used across every pipeline, model and ETL job.',
+ 'TensorFlow':'Speech Emotion Recognition - deep-learning training.',
+ 'Keras':'Speech Emotion Recognition - model definition.',
+ 'scikit-learn':'Classical ML - classification, regression, ensembles.'
+};
+const OS=[
+ {h:'Languages &amp; Engineering',chips:['Python','SQL','Java','TypeScript exp.','ETL','SDLC']},
+ {h:'Data Systems',chips:['ETL','Data Quality','Pandas','NumPy','PySpark','Parquet','Data Validation']},
+ {h:'AI / LLM Engineering',chips:['OpenAI Responses API','RAG','Vector Stores','Tool Calling','Prompt Evaluation','File Search']},
+ {h:'Machine Learning',chips:['scikit-learn','TensorFlow','Keras','PyTorch','LSTM','Ensemble Models','Sentiment Analysis','Adversarial Augmentation']},
+ {h:'Cloud &amp; BI',chips:['AWS Glue','Athena','QuickSight','AWS S3','IAM','EventBridge','Docker','CI/CD','Power BI','Tableau']},
+ {h:'Databases',chips:['PostgreSQL','MySQL','MongoDB','Cassandra','Athena']},
+ {h:'Collaboration &amp; Delivery',chips:['Git','GitHub','BitBucket','JUnit','ALM','Stakeholder Reporting']}
+];
+const osGrid=document.getElementById('osGrid'),skillProof=document.getElementById('skillProof');
+OS.forEach(c=>{
+  const col=document.createElement('div');col.className='os-col';
+  col.innerHTML=`<h4><span class="sq"></span>${c.h.toUpperCase()}</h4>
+    <div class="chips">${c.chips.map(ch=>{
+      const has=PROOFS[ch.replace(' exp.','')]||PROOFS[ch];
+      return `<span class="chip${has?' has-proof':''}" tabindex="${has?0:-1}" ${has?'role="button" aria-label="Show proof for '+ch+'"':''} data-skill="${ch}">${ch}</span>`;
+    }).join('')}</div>`;
+  osGrid.appendChild(col);
+});
+function showProof(skill){
+  const key=skill.replace(' exp.','');const txt=PROOFS[key]||PROOFS[skill];
+  if(!txt)return;
+  skillProof.innerHTML=`<div class="sp-name mono">▸ ${skill}</div><div class="sp-text">${txt}</div>`;
+  skillProof.classList.add('show');
+}
+osGrid.querySelectorAll('.chip').forEach(ch=>{
+  if(!ch.classList.contains('has-proof'))return;
+  ch.onclick=()=>showProof(ch.dataset.skill);
+  ch.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showProof(ch.dataset.skill)}};
+});
+
+/* ===== evidence dashboard ===== */
+const EV=[
+ ['9','manufacturer sources unified'],['15+','SQL queries written'],['8','Power BI dashboards'],['5','client accounts'],
+ ['20%','faster analysis turnaround'],['2','analyst-days saved weekly'],['20+','brand-impersonation takedowns'],['€12k','cost avoided'],
+ ['10+','automation scripts'],['30%','testing effort reduced'],['3×','data augmentation'],['19%','ML performance gain'],
+ ['3.85','GPA / 4.20 (MSc, UCD)','special'],['IEEE','published research','special'],['7','emotion classes (LSTM)'],['9.57','B.Tech CGPA / 10','special']
+];
+const evGrid=document.getElementById('evGrid');
+EV.forEach(e=>{
+  const d=document.createElement('div');d.className='ev'+(e[2]?' special':'');
+  d.innerHTML=`<div class="ev-num">${e[0]}</div><div class="ev-lbl">${e[1]}</div>`;
+  evGrid.appendChild(d);
+});
+
+/* ===== particle field ===== */
 const cv=document.getElementById('flow'),cx=cv.getContext('2d');
 let W,H,parts=[];
 function size(){W=cv.width=innerWidth*devicePixelRatio;H=cv.height=innerHeight*devicePixelRatio;}
 size();addEventListener('resize',size);
 function mk(){return{x:Math.random()*W,y:Math.random()*H,s:(.3+Math.random()*.8)*devicePixelRatio,v:(.2+Math.random()*.5)*devicePixelRatio,c:Math.random()>.5?'rgba(245,177,76,':'rgba(94,234,212,'};}
-for(let i=0;i<70;i++)parts.push(mk());
-let mreduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+for(let i=0;i<64;i++)parts.push(mk());
+const mreduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 function draw(){
   cx.clearRect(0,0,W,H);
   parts.forEach(p=>{
     if(!mreduce){p.x+=p.v;if(p.x>W+10){p.x=-10;p.y=Math.random()*H;}}
-    cx.beginPath();cx.arc(p.x,p.y,p.s,0,7);cx.fillStyle=p.c+'.6)';cx.fill();
-    cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(p.x-p.v*14,p.y);cx.strokeStyle=p.c+'.12)';cx.lineWidth=p.s;cx.stroke();
+    cx.beginPath();cx.arc(p.x,p.y,p.s,0,7);cx.fillStyle=p.c+'.55)';cx.fill();
+    cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(p.x-p.v*14,p.y);cx.strokeStyle=p.c+'.1)';cx.lineWidth=p.s;cx.stroke();
   });
   requestAnimationFrame(draw);
 }
-draw();
+if(!mreduce)draw();else draw();
 </script>
 </body>
 </html>
