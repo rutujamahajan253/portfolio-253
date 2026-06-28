@@ -589,7 +589,7 @@ body.recruiter .recruiter-note{display:inline-block}
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="status-line mono rev"><span class="dot"></span>STATUS: open to Data, AI, ML &amp; Analytics roles in Ireland · from September</div>
+    <div class="status-line mono rev"><span class="dot"></span>STATUS: open to Data, AI, ML &amp; Analytics roles in Ireland</div>
     <h2 class="rev">Let's build the <span class="grad">next decision system</span> together.</h2>
     <p class="rev">If your team is building reliable data systems, practical AI prototypes, or ML-powered products, I'd be happy to talk. MSc Computer Science at UCD · GPA 3.85/4.20 · Dublin, Ireland.</p>
     <div class="contact-row rev">
@@ -665,7 +665,7 @@ const heroLines=[
  "<span class='t-com'>[cloud] </span><span class='t-out'>S3·Glue·Athena·QuickSight</span> <span class='t-num'>OK</span>",
  "",
  "<span class='t-prompt'>control@room</span>:~$ <span class='t-out'>echo $AVAILABILITY</span>",
- "<span class='t-kw'>open · Ireland · from September</span>",
+ "<span class='t-kw'>open · Ireland</span>",
  "<span class='t-prompt'>control@room</span>:~$ <span class='cursor'></span>"
 ];
 const out=document.getElementById('hero-out');let li=0;
@@ -936,7 +936,7 @@ document.getElementById('briefBtn').onclick=()=>{
   modalContent.innerHTML=`<div class="briefing-body">
     <p><b>Rutuja Mahajan</b> is a Dublin-based MSc Computer Science candidate (UCD, GPA 3.85/4.20) working as a Data Analyst Intern at HealthBeacon, with prior experience across threat-intelligence automation and SAP test automation.</p>
     <p style="margin-top:12px">She works across <b>Python ETL, SQL, cloud analytics (AWS), BI dashboards, machine learning, sentiment analysis, and LLM/RAG prototypes</b> - building reliable pipelines, evaluated models, and decision-ready outputs. Her flagship AI project, <b>DecisionForge</b>, is a RAG + tool-calling LLM agent; her data work has unified 9 messy sources, saved ~2 analyst-days/week, and standardised reporting across 5 client accounts.</p>
-    <p style="margin-top:12px">Best fit: <b>Data Analyst, Analytics Engineer, Data Scientist, AI Engineer</b> and graduate Data/AI/ML roles in Ireland, available from September.</p>
+    <p style="margin-top:12px">Best fit: <b>Data Analyst, Analytics Engineer, Data Scientist, AI Engineer</b> and graduate Data/AI/ML roles in Ireland.</p>
     <div class="bf-metrics">
       <span>9 sources unified</span><span>~2 days/wk saved</span><span>8 dashboards · 5 accounts</span>
       <span>+19% ML perf</span><span>~€12k cost avoided</span><span>IEEE published</span>
@@ -948,7 +948,7 @@ document.getElementById('briefBtn').onclick=()=>{
   </div>`;
   openModal();
   document.getElementById('copyBrief').onclick=function(){
-    const txt="Rutuja Mahajan - Dublin-based MSc Computer Science candidate (UCD, GPA 3.85/4.20), Data Analyst Intern at HealthBeacon. Works across Python ETL, SQL, cloud analytics (AWS), BI dashboards, machine learning, sentiment analysis, and LLM/RAG prototypes. Flagship: DecisionForge (RAG + tool-calling LLM agent). Impact: 9 sources unified, ~2 analyst-days/week saved, 8 dashboards across 5 client accounts, +19% ML performance, ~€12k cost avoided, IEEE published. Open to Data/AI/ML roles in Ireland from September. rutujamahajan32@gmail.com";
+    const txt="Rutuja Mahajan - Dublin-based MSc Computer Science candidate (UCD, GPA 3.85/4.20), Data Analyst Intern at HealthBeacon. Works across Python ETL, SQL, cloud analytics (AWS), BI dashboards, machine learning, sentiment analysis, and LLM/RAG prototypes. Flagship: DecisionForge (RAG + tool-calling LLM agent). Impact: 9 sources unified, ~2 analyst-days/week saved, 8 dashboards across 5 client accounts, +19% ML performance, ~€12k cost avoided, IEEE published. Open to Data/AI/ML roles in Ireland. rutujamahajan32@gmail.com";
     navigator.clipboard?.writeText(txt).then(()=>{this.textContent='✓ copied'},()=>{this.textContent='copy failed'});
   };
 };
